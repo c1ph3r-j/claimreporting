@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#C3BE49</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#2c987d</color>
+    <color name="appcolorgrey">#D3D3D3</color>
+    <color name="lightcolorgrey">#F5F5F5</color>
+    <color name="lightdarkcolorgrey">#ECECEC</color>
+    <color name="darkcolor">#63666A</color>
+    <color name="lightgreen">#e7f069</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#ffec1a</color>
+    <color name="darkgrey">#5A5A5A</color>
+    <color name="blackdark">#444443</color>
+    <color name="bluehyperlink">#55AAFF</color>
+    <color name="appTheme">#3598DB</color>
+    <color name="lightgrey">#808080</color>
+    <color name="colorWhite">#F1ECEC</color>
+    <color name="darkgreen">#006400</color>
+
+    <color name="sienna">#D9823F</color>
+    <color name="grey">#939393</color>
+    <color name="r100">#6B8E23</color>
+    <color name="r200">#FFA500</color>
+    <color name="r300">#964B00</color>
+    <color name="r500">#6495ED</color>
+    <color name="rose_red">#E32423</color>
+
+    <color name="appColor">#C3BE49</color>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bordergrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_margin_100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_margin_12dp"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:text="@string/drivertxt"
+                android:textAlignment="center"
+                android:textColor="@color/blackdark"
+                android:textSize="@dimen/activity_margin_18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_20dp"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginRight="@dimen/activity_margin_20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtcapdl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/capdllicence"
+                            android:textAlignment="textStart"
+                            android:textColor="#444443"
+                            android:textSize="@dimen/activity_margin_17dp" />
+
+
+                        <ImageView
+                            android:id="@+id/whitebookuploaddone"
+                            android:layout_width="@dimen/activity_margin_20dp"
+                            android:layout_height="@dimen/activity_margin_20dp"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:visibility="gone"></ImageView>
+                    </TableRow>
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_margin_200dp"
+                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:background="@drawable/dottedlines"></RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_20dp"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginRight="@dimen/activity_margin_20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtcertno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/drivingnum"
+                android:textAlignment="textStart"
+                android:textColor="#444443"
+                android:textSize="@dimen/activity_margin_17dp" />
+
+
+            <EditText
+                android:id="@+id/editcertno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="@dimen/activity_margin_0dp"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:background="@drawable/custom_border"
+                android:digits="1234567890qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="xxxxxxxx"
+                android:inputType="text"
+                android:padding="@dimen/activity_margin_10dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_20dp"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginRight="@dimen/activity_margin_20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtlicencevalidfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/licencestartdate"
+                android:textAlignment="textStart"
+                android:textColor="#444443"
+                android:textSize="@dimen/activity_margin_17dp" />
+
+            <EditText
+                android:id="@+id/editdrivingvalidfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_0dp"
+                android:layout_marginTop="@dimen/activity_margin_15dp"
+                android:background="@drawable/custom_border"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Please select the date"
+                android:inputType="text"
+                android:padding="@dimen/activity_margin_10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

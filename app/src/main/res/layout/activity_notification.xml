@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    android:orientation="vertical"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:id="@+id/notificationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_10dp"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:fontFamily="@font/latinotypeantartidaroundedbold"-->
+        <!--            android:paddingStart="@dimen/activity_margin_10dp"-->
+        <!--            android:text="@string/your_notification_will_be_visible_here"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="@dimen/activity_margin_18dp" />-->
+
+        <ListView
+            android:id="@+id/listnotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:layout_weight="10"
+            android:divider="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noNewNotificationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+        android:gravity="center"
+        android:text="No New Notifications"
+        android:textSize="@dimen/activity_margin_24dp"
+        android:textStyle="bold" />
+</LinearLayout>

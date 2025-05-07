@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".ClaimAddDriver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightdarkcolorgrey">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_margin_100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/closeicon"
+                        android:layout_width="@dimen/activity_margin_45dp"
+                        android:layout_height="@dimen/activity_margin_45dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/activity_margin_12dp"
+                        android:layout_marginRight="@dimen/activity_margin_15dp"
+                        android:src="@drawable/closeicon"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/activity_margin_10dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/drivertxt"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/txtcapdl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/activity_margin_0dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:text="@string/capdllicence"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#444443"
+                                    android:textSize="@dimen/activity_margin_17dp" />
+
+
+                                <ImageView
+                                    android:id="@+id/whitebookuploaddone"
+                                    android:layout_width="@dimen/activity_margin_20dp"
+                                    android:layout_height="@dimen/activity_margin_20dp"
+                                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                                    android:visibility="gone"></ImageView>
+                            </TableRow>
+                        </TableLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_200dp"
+                            android:layout_marginLeft="@dimen/activity_margin_5dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_5dp"
+                            android:background="@drawable/dottedlines"></RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtcertno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_margin_0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/drivingnum"
+                        android:textAlignment="textStart"
+                        android:textColor="#444443"
+                        android:textSize="@dimen/activity_margin_17dp" />
+
+
+                    <EditText
+                        android:id="@+id/editcertno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_marginLeft="@dimen/activity_margin_0dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:background="@drawable/custom_border"
+                        android:digits="1234567890qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="xxxxxxxx"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtlicencevalidfrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_margin_0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/licencestartdate"
+                        android:textAlignment="textStart"
+                        android:textColor="#444443"
+                        android:textSize="@dimen/activity_margin_17dp" />
+
+                    <EditText
+                        android:id="@+id/editdrivingvalidfrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_0dp"
+                        android:layout_marginTop="@dimen/activity_margin_15dp"
+                        android:background="@drawable/custom_border"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Please select the date"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorLink="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtlicencevalidto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_margin_0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/licenceexpirydate"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_17dp" />
+
+                    <EditText
+                        android:id="@+id/editdrivingvalidto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin_0dp"
+                        android:layout_marginTop="@dimen/activity_margin_15dp"
+                        android:background="@drawable/custom_border"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Please select the date"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorLink="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/nextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_5dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/adddriv"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/activity_margin_30dp"-->
+            <!--                android:layout_height="@dimen/activity_margin_30dp"-->
+            <!--                android:src="@drawable/ic_round_double_arrow_24">-->
+
+            <!--            </ImageView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

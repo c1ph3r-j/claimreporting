@@ -1,0 +1,901 @@
+<resources>
+    <string name="app_name">Bima Yangu</string>
+    <!--        <string name="uaturl">https://uat-app-api.claims.digital/api/v5</string>-->
+    <!--<string name="uaturl">http://103.82.208.145:1113/api/v5</string>-->
+    <!--            <string name="uaturl">https://uat-aki-v2.claims.digital/</string>-->
+    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>
+    <string name="createregistration">Create Your Account</string>
+    <string name="app_version">1.0.4</string>
+    <item name="profileView" type="id" />
+    <string name="createregistrationnew">To register for the Bima Yangu system, please enter the details below</string>
+    <string name="otpverification">OTP Verification</string>
+    <string name="sentverification">We have sent a verification code to your Email ID and Phone Number</string>
+    <string name="receiveotpnot">Didn\'t receive the OTP?</string>
+    <string name="resendotp">RESEND OTP</string>
+    <string name="firstname">First Name</string>
+    <string name="emailid">Email ID</string>
+    <string name="phnnum">XXX XX XXX</string>
+    <string name="otp">Enter OTP</string>
+    <string name="otpman">Please enter the OTP</string>
+    <string name="refcode">Referral Code (Optional)</string>
+    <string name="signinagree">By proceeding in, you agree to our</string>
+    <string name="termsuse">Terms of Use</string>
+    <string name="preivpolicy">Privacy Policy</string>
+    <string name="loginitxt">Sign In</string>
+    <string name="loginitxtnew">Please enter your email id to sign in.</string>
+    <string name="signuptxt">Sign Up</string>
+    <string name="weltxt">Your Insurance Assistant</string>
+    <string name="incdttime">When did the incident happen?</string>
+    <string name="nexttxt">NEXT</string>
+    <string name="sendsms">SEND SMS</string>
+    <string name="adddriv">ADD DRIVER</string>
+    <string name="choseveh">Choose Your Vehicle</string>
+    <string name="chosedriver">Choose Your Driver</string>
+    <string name="list_of_grievance_you_have_applied">List Of Grievance you have applied :</string>
+    <string name="search_msg">Search by Reg No.</string>
+    <string name="servicetxt">Select the Services you needed.</string>
+    <!--    <string name="ambtxt">Ambulance\n(Toll Free No. 999)</string>-->
+    <!--    <string name="towingtxt">Towing\n(No Toll Free No.)</string>-->
+    <!--    <string name="policetxt">Police\n(Toll Free No. 911)</string>-->
+
+    <string name="admin">Your Request has some technical issues. An incident is created and escalated to Technical support team. You will be contacted soon for issue resolution.</string>
+    <string name="nonetwork">Please check your network connection</string>
+
+    <string name="ambtxt">Ambulance</string>
+    <string name="towingtxt">Towing</string>
+    <string name="policetxt">Police</string>
+
+
+    <string name="_254">+254</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="add">Add</string>
+    <string name="choose_emergency_contact_n_optional">Choose Emergency Contact \n(Optional)</string>
+
+    <string name="nameman">Please enter your Full Name</string>
+    <string name="emailman">Please enter your Email ID</string>
+    <string name="phonenumman">Plese enter your Phone Number</string>
+    <string name="validphoneno">Please enter the valid 9 digit Kenya Phone Number</string>
+    <string name="validemailid">Please enter the valid Email ID</string>
+
+    <string name="shwqr">Show QR Code</string>
+    <string name="scanqr">Scan QR Code</string>
+
+    <string name="certinfotxt">Certificate Information</string>
+    <string name="vechinfotxt">Vehicle Information</string>
+    <string name="vechno">Vehicle Number</string>
+    <string name="certnum">Certificate Number</string>
+    <string name="typecert">Type of Certificate</string>
+    <string name="chassinum">Chassis Number</string>
+    <string name="claimtypetxt">Choose your Claim Type</string>
+    <string name="thirdpartyqr">Do you like your captured information to be sent or received by the third party vehicle?</string>
+    <string name="shakephonetxt">Shake with nearby device to quickly connect and share/receive Claim Incident details</string>
+    <string name="drivertxt">Add New Driver</string>
+    <string name="fueldeliv">Fuel Delivery</string>
+    <string name="flattire">Changing Flat Tire</string>
+    <string name="battery">Battery jump Start</string>
+    <string name="assistantacc">Assistant at Accident Site</string>
+    <string name="certscan">Certificate Scan  <font color="#ff0000">*</font></string>
+    <string name="infocrtexpiry">(As printed on your certificate for validating active status of the policy)</string>
+    <string name="expirydate">Select the Certificate Expiry Date<font color="#ff0000">*</font></string>
+    <string name="drivingnum">Driver Licence Number <font color="#ff0000">*</font></string>
+    <string name="licencestartdate">DL Start Date <font color="#ff0000">*</font></string>
+    <string name="licenceexpirydate">DL Expiry Date <font color="#ff0000">*</font></string>
+    <string name="capdllicence">Capture Driving Licence</string>
+    <string name="carproceed">Please capture the damage images</string>
+    <string name="regveritxt">Vehicle Registration or Chassis Number <font color="#ff0000">*</font></string>
+    <string name="regvalitxt">Please select the Reason and enter the Registration number to confirm the certificate validation.</string>
+    <string name="reasonselect">Select the Reason "<font color="#ff0000">*</font></string>
+    <string name="verifytxt">VERIFY</string>
+    <string-array name="reasontype">
+        <item>Self-Validation to ensure I have correct certificate</item>
+        <item>Validation of other personnel’s Insurance Certificates</item>
+        <item>Stolen/Theft</item>
+        <item>Other reasons – I cannot explain</item>
+    </string-array>
+    <string name="amp"><![CDATA[&]]></string>
+    <string name="_00_59">00:59</string>
+    <string name="full_name">Full Name</string>
+    <string name="session_expired">Your session have been expired. Please login again to continue</string>
+    <string name="cra_idval">Bima Yangu ID</string>
+    <string name="prefix254">+254</string>
+    <string name="file_invalid_image">File is invalid. Please upload only the image file from your mobile.</string>
+
+    <string name="go_to_dashboard">GO TO DASHBOARD</string>
+
+    <string name="proceed"><![CDATA[PROCEED]]></string>
+    <string name="activate_your_vehicle">Activate Your Vehicle</string>
+    <string name="to_activate_a_vehicle_you_must_have_a_valid_certificate">To activate a vehicle, you must have a valid certificate.</string>
+    <string name="please_select_expire_date">Please select expiry date</string>
+    <string name="collen">:</string>
+    <string name="a131313131">A131313131</string>
+    <string name="type_of_certificate">Type of Certificate</string>
+    <string name="xxxxxxxx">xxxxxxxx</string>
+    <string name="please_select_the_date">Please select the date</string>
+    <string name="add_new_driver"><![CDATA[Add New Driver >>]]></string>
+    <string name="collision">Collision</string>
+
+    <string name="only_claim_registration_offline_video_will_be_loaded_if_you_dont_have_internet">Only Claim Registration Offline video will be loaded if you dont have internet</string>
+    <string name="cra_vehicle_registration">Bima Yangu Vehicle Registration</string>
+    <string name="grievances">Grievances</string>
+    <string name="claim_collision">Claim Collision</string>
+    <string name="claim_self_involving">Claim Self Involving</string>
+    <string name="claim_stolen">Claim Stolen</string>
+    <string name="claim_registration_offline">Claim Registration - Offline</string>
+
+
+    <string name="orange_color_indicates_the_others_vehicle"><![CDATA[-> Orange color indicates the Others Vehicle]]></string>
+    <string name="no_records_found">No Records Found</string>
+
+    <string name="insurance_and_cover_basics">Insurance and cover basics</string>
+    <string name="claims_101">Claims 101</string>
+    <string name="guidelines_for_insurance_companies">Guidelines for Insurance companies</string>
+    <string name="how_an_insured_is_protected_from_denial_of_claims">How an insured is protected from denial of claims</string>
+    <string name="vehicle_valuations_repairs_and_my_contributions">Vehicle valuations, repairs and my contributions</string>
+    <string name="vehicle_write_offs">Vehicle write offs</string>
+    <string name="customer_support_and_service_desk">Customer support and service desk</string>
+
+    <string name="other_services">Other Services</string>
+    <string name="if_the_two_cars_other_services">If the two cars other services</string>
+    <string name="you_have_scanned_the_digital_certificate">*** You have scanned the digital certificate ***</string>
+    <string name="certificate_expiry_date_as_printed_on_your_certificate_for_validating_active_status_of_the_policy">Certificate expiry date as printed on your certificate (for validating active status of the policy) <font color="#ff0000">*</font></string>
+    <string name="i_m_not_a_robot">I\'m not a robot</string>
+    <string name="policy_information">Policy Information</string>
+    <string name="verify_the_policy_information_displayed_matches_your_certificate">Verify the Policy information displayed matches your certificate.</string>
+    <string name="certificate">Certificate #</string>
+    <string name="policy">Policy #</string>
+    <string name="policy_begin_date">Policy Begin Date</string>
+    <string name="policy_end_date">Policy End Date</string>
+    <string name="insurer">Insurer</string>
+    <string name="vehicle_information">Vehicle Information</string>
+    <string name="verify_the_vehicle_information_displayed_matches_your_certificate">Verify the Vehicle information displayed matches your certificate.</string>
+    <string name="registration">Registration #</string>
+    <string name="chassis_number">Chassis Number</string>
+
+    <string name="chassis_numberAsterisk">Chassis Number <font color="#ff0000">*</font></string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="makemodel"><![CDATA[Make & Model]]></string>
+
+    <string name="makeAsterisk">Make <font color="#ff0000">*</font></string>
+    <string name="modelAsterisk">Model <font color="#ff0000">*</font></string>
+    <string name="yearAsterisk">Year <font color="#ff0000">*</font></string>
+    <string name="or">(OR)</string>
+    <string name="if_you_find_any_of_the_above_policy_or_vehicle_information_incorrect_please_click_here_to">If you find any of the above policy or vehicle information incorrect, please click here to</string>
+    <string name="create_grievance"><u>Create Grievance</u></string>
+
+    <string name="_29_sep_2020">29-Sep-2020</string>
+    <string name="dl_expiry_date">DL Expiry Date</string>
+    <string name="_29_dec_2026">29-Dec-2026</string>
+    <string name="dl_start_date">DL Start Date</string>
+    <string name="dl998898">DL998898</string>
+    <string name="dl_number">DL Number</string>
+    <string name="arun_shiva">Arun Shiva</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="ke">KE</string>
+    <string name="kjn_789_j">KJN 789 J</string>
+    <string name="hold_your_phone_up_to_the_barcode">Hold your phone up to the barcode</string>
+    <string name="wait_a_few_seconds_while_we_upload_your_images_for_our_machine_learning_models_to_analyze">Wait a few seconds while we upload your images.</string>
+    <string name="the_processing_time_is_dependent_on_the_speed_of_your_internet_connection">* The processing time is dependent on the speed of your internet connection.</string>
+    <string name="welcome_to_aki_cra">Welcome to Bima Yangu</string>
+    <string name="aki_cra_provides_the_instant_claim_registration_and_fast_claim_settlement">Bima Yangu provides the instant claim registration and fast claim settlement</string>
+    <string name="notification">Notification</string>
+    <string name="view_more"><![CDATA[View More >>]]></string>
+    <string name="service_by_category">Service by Category</string>
+    <string name="grievance_status">Grievance Status</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="consumer_videos">Consumer Videos</string>
+    <string name="contact_insurance_team">Contact Insurance Team</string>
+    <string name="service_assistant">Service Assistant</string>
+    <string name="profile">Profile</string>
+    <string name="test_environment">TEST ENVIRONMENT</string>
+    <string name="does_this_vehicle_belong_to_you">Does this Vehicle belong to you?</string>
+    <string name="yes_am_the_insured">Yes, am the Insured</string>
+    <string name="no_am_not_the_insured">No, am not the Insured</string>
+    <string name="are_you_authorized_to_add_it">Are you authorized to add it?</string>
+    <string name="yes_the_insured_authorized_me">Yes, the Insured authorized me</string>
+    <string name="no_am_helping_in_an_emergency_situation_at_the_accident_spot_for_another_vehicle">No, am helping in, an emergency situation, at the accident spot for another vehicle.</string>
+    <string name="no_am_not_authorized">No, am not authorized</string>
+    <string name="for_audit_purposes_recorded_and_shared">For audit purposes, your Bima Yangu Number, Geo location and IP address is recorded and shared with the vehicle owner if needed.</string>
+    <string name="scan_certificate">NEXT</string>
+    <string name="aki_cra_does_not_permit">Bima Yangu does not permit adding vehicles without the permission of an Insured / in an accident-related emergency.</string>
+    <string name="color_string">#C3BE49</string>
+    <string name="for_audit_purposes">For audit purposes, your Bima Yangu Phone Number, Geo location and IP address is recorded.</string>
+    <string name="authorizedval1">8752fd3e-e34a-4c04-b224-458a26f719b2</string>
+    <string name="authorizedval2">ff24bc6e-712a-4854-9178-7d34aa51f354</string>
+    <string name="authorizedval3">fdceaf6f-7c6e-4a19-8610-b48fd06535c7</string>
+    <string name="own_vehicle_val1">a0986d14-2021-4d2b-b16e-6d2592259f34</string>
+    <string name="own_vehicle_val2">0a9f5fde-70e2-49d3-8464-8f38cd4db784</string>
+    <string name="own_vehicle">Own Vehicle</string>
+
+    <string name="stolentheftinternet">You can not proceed the Stolen/Theft Flow in the offline.Please turn on your network.</string>
+    <string name="uaturl1">https://aki-cra.swiftant.com/api</string>
+    <string name="enterphonenumber">Please enter your Phone Number/Email ID</string>
+
+    <string name="selectinsoption">Please select any one option</string>
+    <string name="subjectman">Please enter the Title</string>
+    <string name="bodyman">Please enter the Content</string>
+
+    <string name="atleastcolor">Please at-least enter the Reg # or Cert # or color of the car</string>
+    <string name="certificateno">Please enter the certificate number</string>
+    <string name="certificatemin">Certificate Number should be minimum 8 characters</string>
+    <string name="certificatemax">Certificate Number should be maximum 12 characters</string>
+    <string name="regno">Please enter the registration number</string>
+    <string name="grivmanda">Please enter any of the following field(Email ID or Phone Number or Office Address)</string>
+    <string name="grivmintname">Please enter the Intermediary Name</string>
+    <string name="regmin">Registration Number should be minimum 5 characters</string>
+    <string name="regmax">Registration Number should be maximum 10 characters</string>
+    <string name="captregno">Please enter the registration number before capturing the image</string>
+
+    <string name="chassisno">Please enter the chassis number</string>
+    <string name="chassismin">Chassis Number should be minimum 3 characters</string>
+    <string name="chassismax">Chassis Number should be maximum 17 characters</string>
+
+    <string name="policyno">Please enter the policy number</string>
+    <string name="policymin">Policy Number should be minimum 8 characters</string>
+    <string name="policymax">Policy Number should be maximum 17 characters</string>
+    <string name="policystartno">Please select the Policy Begin Date</string>
+    <string name="policyendno">Please select the Policy End Date</string>
+    <string name="makeno">Please enter the make</string>
+    <string name="modelno">Please enter the model</string>
+    <string name="yearno">Please enter the Year of Manufacture</string>
+    <string name="yearminmax">Please enter the valid Year of Manufacture(4 digit)</string>
+    <string name="exceptioncheck">Please check your network connection and retry once</string>
+    <string name="fromdate">Please enter from date</string>
+    <string name="todate">Please enter to date</string>
+    <string name="referalcode">Please enter the referral Code</string>
+    <string name="uatenviron">Please choose your environment to proceed</string>
+    <string name="titleman">Please enter the title</string>
+    <string name="descman">Please enter the description</string>
+    <string name="greaterdate">To date is lesser than From date</string>
+    <string name="selfuploading">DL uploading is in progress, please wait.</string>
+    <string name="nationaluploading">National ID uploading is in progress, please wait.</string>
+    <string name="slownetwork">Your Network Connection is Slow.Please check</string>
+    <string name="verifyotp">Please enter the OTP for verification</string>
+    <string name="yearinbetween">Please enter the valid Year Of Manufacture</string>
+    <string name="registeremail">Please enter your email id</string>
+    <string name="registervalidemail">Please enter valid email id</string>
+    <string name="emailotpmsg">Please enter the Verification code sent to your Email ID</string>
+    <string name="termsconditons">https://www.bimayangu.ke/api/document/ProfileTermsCondition.html</string>
+    <string name="registerphnno">Please enter your phone number</string>
+    <string name="driverotp">Please enter the OTP</string>
+    <string name="addressval">Please enter the address of your other location</string>
+    <string name="comments">Please enter the additional comments</string>
+    <string name="existdrivphnno">Please enter the driver Phone Number</string>
+    <string name="existdrivcraid">Please enter the driver Bima Yangu ID</string>
+    <string name="notavalidcraid">Please enter the valid Bima Yangu ID</string>
+    <string name="validcramax">Bima Yangu IDs should have a minimum of 6 alphanumeric characters but no more than 8</string>
+    <string name="existdrivvalidphoneno">Please enter a valid 9 digits Kenya phone number</string>
+    <string name="uploadimage">Please capture the image</string>
+    <string name="selectdocumentype">Please select the document</string>
+    <string name="uploadcomments">Please enter the comments</string>
+    <string name="validnetworkphoneno">Prefix of the entered phone number is not matched with any of the network service provider in Kenya.</string>
+    <string name="validindiaphoneno">Please enter valid 10 digit India phone number</string>
+    <string name="locationfetching">Please try after 30 seconds your location informtion is fetching.</string>
+    <string name="firebaseidgenerate">Please wait for 30 seconds.System is loading all the informations.</string>
+    <string name="invalidemaild">Please enter valid email id </string>
+    <string name="nearemailid">Please enter your email id</string>
+    <string name="Reqcustomizedname">Please enter your own customized Username</string>
+    <string name="resendOTP">OTP resend successfully</string>
+    <string name="UserSignatureRequired">User signature required</string>
+    <string name="ClaimSignatureRequired">Signature is required</string>
+    <string name="Claimlastimage">This is your last image. Please sign and click on Submit button</string>
+    <string name="ClaimSignAllImages">You need to sign beneath each image. Please slide the image left or right to review all of them.</string>
+    <string name="AcknowledgementRequired">Please accept Acknowledgement</string>
+    <string name="proofimage">Please upload any of your proof image</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="ackContent">I/We, the above named, do hereby, to the best of my/our knowledge and belief, warrant the truth of the foregoing statement in every respect, and I/We agree if I/We have made of in any futher declaration the company may require respect if the said accident, shall make any false or faudulent statement, or any suppression or concealment, the policy shall be void and all rights to recover thereunder in respect of past or future accidents shall beforfeited.</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_claimRegistration">Report an Incident</string>
+    <string name="menu_myVehicle">My Vehicles</string>
+    <string name="menu_mydriver">My Drivers</string>
+    <string name="menu_claimHistory">Claim History</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Logout</string>
+    <string name="colon">:</string>
+    <string name="enterexpirydate">Please select the expiry date</string>
+    <string name="expiredcertificate">It appears that your certificate has expired. Make sure the expiration date is correct.</string>
+    <string name="verifyrecaptcha">Please verify the recaptcha to proceed</string>
+    <string name="scannum">Please scan the number plate</string>
+    <string name="dategrivience">Please select the date</string>
+    <string name="drivermapreq">Please select the driver from the list to proceed</string>
+    <string name="scancertificate">Please scan the Certificate</string>
+    <string name="numplatreq">Please enter registration number</string>
+    <string name="numplategreater">Registration number should be less than 10 characters</string>
+    <string name="entercertificateno">Please enter certificate number</string>
+    <string name="enterinsuredname">Please enter insured name</string>
+    <string name="selectothererg">Please select the third party option</string>
+    <string name="selectincidenttype">Please select the Incident Type option</string>
+    <string name="selectstolentype">Please select the stolen type option</string>
+    <string name="selectneardear">Please select the emergency contact option</string>
+    <string name="selectvehicle">Please select the Vehicle</string>
+    <string name="enterinsurancecompany">Please enter insurance company</string>
+    <string name="enterinsurancetype">Please enter insurance type</string>
+    <string name="enterpolicystdate">Please enter policy start date</string>
+    <string name="enterpolicyenddate">Please enter policy end date</string>
+    <string name="enterphonenocode">Please enter the code sent to your phone number</string>
+    <string name="enteremailidcode">Please enter the code sent to your email id</string>
+    <string name="licenseno">Please enter license number</string>
+    <string name="moredear">You can not add more than 5 near and dear information</string>
+    <string name="nearname">Please enter the near and dear name</string>
+    <string name="claimofflineid">Please enter the received offline claim id</string>
+    <string name="nearphon">Please enter the near and dear phone number</string>
+    <string name="licenseprocured">Please enter the country in which license was procured</string>
+    <string name="drivingnumber">Please enter license number</string>
+    <string name="drivingvalidityfrom">Please enter license validity from date</string>
+    <string name="drivingvalidityend">Please enter license validity end date</string>
+    <string name="kenyanationalid">Please enter national id</string>
+    <string name="nationalprocured">Please enter country in which passport was procured</string>
+    <string name="passportnumber">Please enter passport number</string>
+    <string name="nationalvalidityfrom">Please enter passport validity from date</string>
+    <string name="nationalvalidityend">Please enter passport validity end date</string>
+    <string name="validemail">Please enter valid email id</string>
+    <string name="vinnumber">Please enter VIN Number</string>
+    <string name="frontview">Please capture the front view</string>
+    <string name="rearview">Please capture the rear view</string>
+    <string name="vinnumbermin">VIN Number should be minimum 3 characters</string>
+    <string name="vinnumbermax">VIN Number should be maximum 25 characters</string>
+    <string name="drivername">Please enter driver name</string>
+
+
+    <string name="titletxt">Title <font color="#ff0000">*</font></string>
+    <string name="desctxt">Content <font color="#ff0000">*</font></string>
+
+    <string name="drivernamenew">Please enter driver name</string>
+    <string name="addnationadriver">Please capture the Driver National ID</string>
+    <string name="drivernationalnew">Please enter driver national id</string>
+    <string name="adddriverimage">Please capture the Driving licence image</string>
+    <string name="driverdlnew">Please enter driver driving licence</string>
+    <string name="driverphnonew">Please enter driver phone number</string>
+    <string name="driveremailnew">Please enter valid driver email id</string>
+
+
+    <string name="driverlist">Please add a driver details</string>
+    <string name="driverlicense">Please enter driver license number</string>
+    <string name="kenyanid">Please enter kenya id number</string>
+    <string name="passportscan">Please capture the passport image</string>
+    <string name="nationaidscan">Please capture your National ID image</string>
+    <string name="firstnamemax">Your first name should be minimum 3 characters</string>
+    <string name="kenyanidmin">Your Kenyan ID should be minimum 3 characters</string>
+    <string name="passportidmin">Your Passport number should be minimum 3 characters</string>
+    <string name="kenyanidmax">Your Kenyan ID should be maximum 20 characters</string>
+    <string name="passportidmax">Your Passport number should be maximum 15 characters</string>
+
+    <string name="driveridmin">Your Driving Licence number should be minimum 3 characters</string>
+    <string name="driveridmax">Your Driving Licence number should be maximum 20 characters</string>
+
+    <string name="lastnamemax">Your last name should be minimum 3 characters</string>
+    <string name="drivernamemax">Driver name should be minimum 3 characters</string>
+    <string name="firstnamenotval">Please enter the valid first name</string>
+    <string name="lastname">Please enter your last name</string>
+    <string name="driverselfname">Please enter the driver name</string>
+    <string name="scandriving">Please capture the driving license image</string>
+    <string name="driverselfnamemax">Driver Name should be minimum 3 characters</string>
+    <string name="driverselfnamenotval">Driver Name should be maximum 100 characters</string>
+    <string name="driverselflicence">Please enter the driving licence number</string>
+    <string name="driverselflicencemin">Your driving licence should be minimum 3 characters</string>
+    <string name="driverselflicencemax">Your driving licence should be maximum 100 characters</string>
+    <string name="driverselffrom">Please enter the driving licence from date</string>
+    <string name="driverselfto">Please enter the driving licence expiry date</string>
+    <string name="lastnamenotvalid">Please enter valid last name</string>
+    <string name="drivernamenotvalid">Please enter valid Driver name</string>
+    <string name="kenyannotvalid">Please enter valid Kenya National ID</string>
+    <string name="reqregno">Please enter registration number</string>
+    <string name="ownernamereq">Please enter owner name</string>
+    <string name="addressreq">Please enter address</string>
+    <string name="makereq">Please enter make</string>
+    <string name="modelreq">Please enter model</string>
+    <string name="yearreq">Please enter year of manufacture</string>
+    <string name="policynoreq">Please enter policynumbere</string>
+    <string name="accidentdetreq">Please enter how many persons at the time of accident and their details</string>
+    <string name="driverphono">Please enter driver Phone number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_vehicle_to_my_profile">Add Vehicle to my Profile</string>
+    <string name="Back_to_home"><![CDATA[BACK TO DASHBOARD]]></string>
+    <string name="congratulations_your_certificate_has_been_activated">Congratulations! Your certificate has been activated.</string>
+    <string name="having_the_vehicle_associated_with_your_cra_profile_lets_you_report_claims_instantly_process_claims_more_quickly_and_seek_help_during_an_incident_click_add_vehicle_to_my_profile_to_start_your_insurance_digital_journey">Having the vehicle associated with your Bima Yangu profile lets you Report claims instantly, process claims more quickly and seek help during an incident. Click \'Add Vehicle to my Profile\' to start your Insurance digital Journey.</string>
+    <string name="update_change_your_phone_number">Update/Change Your Phone Number</string>
+    <string name="skip"><![CDATA[SKIP]]></string>
+    <string name="update">UPDATE</string>
+    <string name="user_s_name">User’s name</string>
+    <string name="user_s_phone_number">User’s phone number</string>
+    <string name="registration_number_">Registration Number <font color="#ff0000">*</font></string>
+    <string name="enter_reg">Enter reg #</string>
+    <string name="source_from_which_the_certificate_was_procured">Source from which the certificate was procured.</string>
+    <string name="direct">Direct</string>
+    <string name="others">Others</string>
+    <string name="name_is_mandatory_and_any_one_of_the_field_is_mandatory_email_id_or_phone_number_or_office_address">Name is mandatory and any one of the field is mandatory(Email id or Phone Number or Office address)</string>
+    <string name="name_of_the_intermediary">Name of the Intermediary <font color="#ff0000">*</font></string>
+    <string name="intermediary_office_address">Intermediary Office Address</string>
+    <string name="intermediary_phone_number">Intermediary Phone Number</string>
+    <string name="intermediary_email_id">Intermediary Email Id</string>
+    <string name="approximate_date_on_which_the_certificate_was_procured">Approximate Date on which the certificate was procured <font color="#ff0000">*</font></string>
+    <string name="please_select_date">Please select date</string>
+    <string name="capture_certificate_image_n_optional">Capture Certificate Image \n(Optional)</string>
+    <string name="additional_information_optional">Additional Information (Optional)</string>
+    <!--    <string name="submit"><![CDATA[SUBMIT >>]]></string>-->
+    <string name="submit">SUBMIT</string>
+    <string name="next">NEXT</string>
+    <string name="capture_all_the_stolen_parts_of_your_vehicle">Take a photo of the Stolen Part</string>
+    <string name="additional_information_description">Additional Information / Description</string>
+    <string name="please_enter_your_address">Please enter location of Theft</string>
+    <string name="other_location">Other Location</string>
+    <string name="current_location">Current Location</string>
+    <string name="where_has_your_vehicle_vehicle_parts_been_stolen">Where has your vehicle/vehicle parts been stolen?</string>
+    <string name="stolen_theft_information">Stolen / Theft Information</string>
+    <!--    <string name="car">Theft of Vehicle</string>-->
+    <!--    <string name="parts_missing">Theft of Vehicle Part(s)</string>-->
+    <string name="is_your_car_stolen_or_some_part_of_the_car_is_missing">Select the type of Theft</string>
+    <string name="view_document">(View Document)</string>
+    <string name="would_you_like_to_know_more_about_motor_insurance_and_claims">Would you like to know more about Motor Claims?</string>
+    <string name="_1_how_to_report_claims">• How to report claims?</string>
+    <string name="click_here">Click here</string>
+    <string name="driver_s_number">Driver\'s Phone Number<font color="#ff0000">*</font></string>
+    <string name="_2_general_information_about_nmotor_insurance_claims">• General Information About Motor Insurance Claims?</string>
+    <string name="done">DONE</string>
+    <string name="asterisk">*</string>
+    <string name="please_select_the_expiry_date">please select the expiry date</string>
+    <string name="expiry_date">Expiry Date:</string>
+    <string name="capture_vehicle_image_n_optional">Capture Vehicle Image <font color="#55AAFF">(Optional)</font></string>
+    <string name="certificate_scan">Certificate Scan <font color="#ff0000">*</font></string>
+    <string name="to_add_a_vehicle_you_must_have_a_valid_certificate">To add a vehicle, you must have a valid certificate.</string>
+    <string name="verify_the_information_displayed_matches_your_certificate">Verify the information displayed matches your certificate.</string>
+    <string name="verify_the_information_displayed_matches_your_logbook_a_claim_with_invalid_information_could_be_rejected_it_can_be_modified_if_it_is_different_from_your_logbook">Verify the information displayed matches your logbook. A claim with invalid information could be rejected. It can be modified if it is different from your logbook.</string>
+    <string name="chassis_vin_number">Chassis/VIN Number <font color="#ff0000">*</font></string>
+    <string name="year_of_manufacture">Year of Manufacture <font color="#ff0000">*</font></string>
+    <string name="this_certificate_has_already_been_activated">This certificate has already been activated</string>
+    <string name="Loading">Loading</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="location_not_enabled">GPS locations is not enabled.Please enable it</string>
+    <string name="Ok">Ok</string>
+    <string name="back_to_home"><![CDATA[Back to Dashboard]]></string>
+    <string name="Certificate_cancelled_message">This certificate is cancelled by insurance company and hence cannot be used for adding vehicle to Bima Yangu</string>
+    <string name="SessionExpiredMessage">Your session have been expired. Please login again to continue</string>
+    <string name="NumberPlateDoesNotMatchErrorMessage">Number Plate which you have scanned and the registration number which have found on Certificate is not matched.Please check</string>
+    <string name="QrCodeMissMatchMessage"><![CDATA[QR Code scan & expiry date information provided by you does not match with the certificate system.\n]]></string>
+    <string name="ClaimDeniedMessage">It is very important to resolve this now, else your claims may be denied.\n</string>
+    <string name="PleaseCreateGrievanceMessage">If you think you have entered wrong data, please correct the same, else please create grievance and AKI will get in touch with you.</string>
+    <string name="YesRegisterComplaintMessage">Yes(Register a complaint)</string>
+    <string name="NoLetHimMeCorrectMessage">No(Let me correct the Info)</string>
+    <string name="ActivateNowText">ACTIVATE NOW</string>
+    <string name="please_enter_expiry_date">Please select the expiry date.</string>
+    <string name="Please">Please</string>
+    <string name="validate_your_certificate">Validate Your Certificate</string>
+    <string name="vehicle_added_successful">Vehicle added successful</string>
+    <string name="your_vehicle_added_successfully">Your vehicle have added successfully.</string>
+    <string name="unauthMessge">Your session have been expired. Please login again to continue</string>
+    <string name="SuccessGrievanceMessage">The grievance has been filed successfully with the provided information. \nHere is your Grievance ID : </string>
+
+
+    <string name="attachment">Attachment</string>
+    <string name="d_l_validity_from">D/L Validity From</string>
+    <string name="driver_dl_num">Driver DL Num</string>
+    <string name="type_b_commercial_vehicle">Type - B Commercial Vehicle</string>
+    <string name="d_l_validity_to">D/L Validity To</string>
+    <string name="link_driver_profile_optional">Create Driver Profile (Optional)</string>
+
+
+    <string name="add_driver">ADD DRIVER</string>
+    <string name="add_driver_profile"><u>Add Driver Profile</u> >></string>
+    <string name="tpick_a_date">\tPick a Date</string>
+    <string name="validity_till">Validity Till: <font color="#ff0000">*</font></string>
+    <string name="validity_from">Validity From: <font color="#ff0000">*</font></string>
+    <string name="driving_license_number">Driving License Number: <font color="#ff0000">*</font></string>
+    <string name="are_you_adding_your_driving_profile">Adding your driving profile?</string>
+    <string name="choose_any_one_option_from_below">Search by Mobile Number or Bima Yangu ID</string>
+    <string name="mobile_number">Driver Phone Number</string>
+    <string name="cra_id">Driver Bima Yangu ID</string>
+    <string name="please_enter_your_mobile_number_or_cra_id">Please Enter Your Mobile Number or Bima Yangu ID: <font color="#ff0000">*</font></string>
+    <string name="driver_s_name">Driver\'s Name: <font color="#ff0000">*</font></string>
+    <string name="driving_license_number1">Driving License Number: <font color="#ff0000">*</font></string>
+    <string name="national_id">National ID: <font color="#ff0000">*</font></string>
+    <string name="enter_here">Enter here</string>
+    <string name="enter_the_CRA_id_of_the_driver">Enter the Bima Yangu ID of the driver</string>
+    <string name="enter_the_phone_number_of_the_driver">Enter the Phone Number of the driver</string>
+    <string name="loading">Loading</string>
+    <string name="please">Please wait...</string>
+    <string name="number_plate_you_scanned">Number Plate which you have scanned and the registration number which have found on Certificate is not matched.Please check</string>
+    <string name="no_let_me_correct_info">No(Let me correct the Info)</string>
+    <string name="yes_create_grievance">Yes(Create Grievance)</string>
+    <string name="qr_code_and_expiry_does_not_match"><![CDATA[Registration Number information provided by you does not match with the certificate system.\n"\n"
+                "It is very important to resolve this now, else your claims may be denied.\n""\n"
+                "If you think you have entered wrong data, please correct the same, else please create grievance and AKI will get in touch with you.]]></string>
+    <string name="gps_not_enabled">GPS locations is not enabled.Please enable it</string>
+    <string name="you_have_scanned_physical_certificate">*** You have scanned the Physical certificate ***</string>
+    <string name="you_have_scanned_digital_certificate">*** You have scanned the Digital certificate ***</string>
+    <string name="validate_motor_insurance_certificate">Validate Motor Insurance Certificate</string>
+    <string name="please_login_again_to_continue">Your session have been expired. Please login again to continue</string>
+    <string name="you_dont_have_driver_profile">You don\'t have a driver profile associated with your Bima Yangu account. Click \'Add Driver Profile\' to create one.</string>
+    <string name="choose_one_or_more_driver_profiles">Choose one or more driver profiles from the following list to link with your vehicle.</string>
+    <string name="alert">Alert</string>
+
+
+    <string name="senddatadialog"><![CDATA[Click Proceed, If the information is being transferred to another party..\n"\n"
+                "         (or)\n""\n"
+                "Click Show QR Code, If the data is not being transferred correctly.]]></string>
+
+    <string name="video_play">Video Play</string>
+    <string name="upon_completion_please_click_the_stop_button_on_the_right">* Upon completion, please click the stop button on the right *</string>
+    <string name="to_provide_video_evidence_click_the_record_button_on_the_left_and_then_speak_the_text_displayed">To provide video evidence, click the record button on the left and then speak the text displayed.</string>
+    <string name="video_declaration_optional">Video Declaration <font color="#55AAFF">(Optional)</font></string>
+    <string name="video_evidence_optional">Video Evidence <font color="#55AAFF">(Optional)</font></string>
+    <string name="video_evidence_">Video Evidence</string>
+    <string name="incident_visual_audio_artificats_optional">Incident Visual/Audio Artificats (Optional)</string>
+    <string name="tap_here_to_capture">Tap here to capture</string>
+    <string name="audio_declaration_optional">Audio Declaration <font color="#55AAFF">(Optional)</font></string>
+    <string name="blue_color_indicates_the_own_vehicle"><![CDATA[-> Blue color indicates the Own Vehicle]]></string>
+    <string name="policy_no">Policy No</string>
+    <string name="policy_begin_date2">Policy Begin Date</string>
+    <string name="insured_mail_id">Insured Mail ID</string>
+    <string name="insured_phone_no">Insured Phone No</string>
+    <string name="policy_holder_name">Policy Holder Name</string>
+    <string name="insurer_company">Insurer Company</string>
+    <string name="year_of_manufacture2">Year of Manufacture</string>
+    <string name="model2">Model</string>
+    <string name="vin_number">VIN Number</string>
+    <string name="registration_no">Registration No</string>
+    <string name="certificate_no">Certificate No</string>
+    <string name="coverage_type">Coverage Type</string>
+    <string name="certificate_type">Certificate Type</string>
+    <string name="apa_insurance_company_ltd">APA INsurance company Ltd.</string>
+    <string name="insurance_company">Insurance Company</string>
+    <string name="a567125172">A567125172</string>
+    <string name="certificate_no2">Certificate No.</string>
+    <string name="kcy587e">KCY587E</string>
+    <string name="registration_no2">Registration No.</string>
+    <string name="type_b_commercial_vehicle2">Type - B Commercial Vehicle</string>
+    <string name="kcy587e2">KCY587E</string>
+    <string name="test_driver">Test Driver</string>
+    <string name="noDriversText">Seems You have not Added any Drivers to this Vehicle.</string>
+    <string name="pdf_is_generating">PDF is generating</string>
+    <string name="hyperlink_text">Click Here >></string>
+
+
+    <string name="report_here">Report Here</string>
+    <string name="cra_id_">Bima Yangu Id</string>
+    <string name="dcvaa0005">DCVAA0005</string>
+    <string name="screen_print">Screen Print</string>
+    <string name="description_">Description</string>
+    <string name="home">HOME</string>
+    <string name="screen_name">Screen Name</string>
+
+    <string name="qr_code">QR Code</string>
+    <string name="the_information_captured_as_of_this_incident_will_be_send_to_the_near_by_third_party">With a Bluetooth connection, the information captured in this incident will be transmitted to a third party nearby.</string>
+    <string name="send_your_information">SEND</string>
+    <string name="receive_your_third_party_information">RECEIVE</string>
+    <string name="the_information_captured_from_the_third_party_vehicle_will_be_send_to_your_mobile_via_bluetooth_as_part_of_this_incident">As part of this incident, the information captured from the third party vehicle will be sent to your mobile device via Bluetooth.</string>
+    <string name="scan_the_qr_code_to_connect">To get details about your incident, ask a third party vehicle driver to scan this QR code</string>
+    <string name="proceed_text">Proceed</string>
+    <string name="your_device_is_taking_too_long_to_connect">Your device is taking too long to connect </string>
+    <string name="textForSender">\nClick Proceed to show your QR code for the third party vehicle person to scan.</string>
+    <string name="textForReceiver">\nClick Proceed, you can scan the QR code of the third party to get details about their incident. </string>
+
+    <string name="offlineMsg">Your Offline Claim Registration has been in pending status. Please proceed with internet to submit your claim as 100% complete.</string>
+    <string name="cancel_offline_claim">CANCEL OFFLINE CLAIM</string>
+    <string name="submit_offline_claim">SUBMIT OFFLINE CLAIM</string>
+    <string name="uploadMsg">Your offline Images are being uploaded and detected for damages. Please wait...!</string>
+    <string name="processingMsg">* Processing time depends on the speed of your internet connectivity.</string>
+
+    <string name="please_wait_while_the_captured_image_is_uploaded">Please wait while the captured image is uploaded.</string>
+    <string name="view_pdf">VIEW PDF</string>
+    <string name="logout">LOGOUT</string>
+    <string name="back_to_home2"><u>BACK TO DASHBOARD >></u></string>
+    <string name="click_on_menu_claim_history_select_incident_id_add_information_upload_documents"><![CDATA[Click on Other Services -> Claim Documentation Addition]]></string>
+    <string name="additional_documents_can_be_uploaded_by_clicking_on_the_specific_incident_id_in_the_claim_history">Additional documents can be uploaded by clicking on the specific <font color="#000000">Incident Reference ID</font>  in the claim history.</string>
+    <string name="submit_your_claim">SUBMIT YOUR CLAIM</string>
+    <string name="sign_here">Sign here.</string>
+    <string name="scroll_the_image_down_to_view_all_pictures">Scroll the image down to view all pictures</string>
+    <string name="image_declaration">Image Declaration</string>
+    <string name="request_for">Request for</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="skip_text">Skip</string>
+
+    <string name="upload_or_capture_accident_spot_image">Upload/Capture the Accident Spot image</string>
+    <string name="upload_capture_additional_image">Upload/Capture the Additional image</string>
+    <string name="claim_report_downloading">Your Claim registration report is downloading</string>
+
+    <string name="clickherepolice">Click here to see a list of nearby police stations</string>
+
+    <string name="there_is_no_private_ambulance_service_nearby_in_the_event_of_an_emergency_dial_the_toll_free_number_999">There is no private ambulance service nearby. In the event of an emergency, dial the toll-free number 999</string>
+    <string name="there_are_no_police_stations_nearby_when_you_want_police_assistance_you_can_use_the_toll_free_number_911">There are no police stations nearby. When you want police assistance, you can use the toll-free number 911</string>
+    <string name="disclaimer_this_is_a_value_added_service_that_you_can_acquire_at_your_own_expense_and_may_or_may_not_be_covered_by_your_insurance_plan_details_can_be_found_by_contacting_the_insurer">Disclaimer : This is a value-added service that you can acquire at your own expense and may or may not be covered by your insurance plan. Details can be found by contacting the insurer.</string>
+    <string name="in_this_area_there_are_no_towing_services_listed_in_the_aki_cra">In this area, there are no towing services listed in the Bima Yangu</string>
+    <string name="capture_declaration_image_optional">Capture Declaration Image <font color="#55AAFF">(Optional)</font></string>
+    <string name="to_speed_up_the_processing_of_claims_complete_the_remaining_steps_digitally">To speed up the processing of claims, complete the remaining steps digitally.</string>
+    <string name="emergency_services">Emergency Services</string>
+    <string name="the_nairobi_west_hospital_ltd">The Nairobi West Hospital Ltd</string>
+    <string name="_254_709_640000">+254 709 640 000</string>
+    <string name="mimosa_road_mucai_drive_off_ngong_road_next_to_pram_court_apartments_aki_centre_nairobi_city_kenya">Mimosa Road Mucai Drive Off Ngong Road Next to Pram Court Apartments AKI Centre, Nairobi City, Kenya</string>
+
+
+    <string name="next2"><![CDATA[NEXT >>]]></string>
+    <string name="cam_here">Cam here</string>
+    <string name="selfinvolving">Self-Involving</string>
+    <string name="selfinvolvingdesc">Accident involving only your vehicle.</string>
+
+    <string name="stolentheft">Stolen/Theft</string>
+    <string name="stolentheftdesc">Stolen vehicle or vehicle parts.</string>
+    <string name="if_the_two_cars_met_with_an_accident">Accident between two or more vehicles.</string>
+
+
+    <string name="value_added_service_hospital">Disclaimer : This is a value-added service that may not be covered by your insurance.</string>
+    <string name="car">Stolen Vehicle</string>
+    <string name="parts_missing">Vehicle Parts</string>
+
+    <string name="take_pictures_or_upload_additional_documents_related_to_this_accident">Take pictures or upload additional documents related to this accident.</string>
+    <string name="take_upload_photos_of_accident_spots">Take/upload photos of accident spots</string>
+    <string name="add_additional_documents_by_capturing_or_uploading">Add additional documents by capturing or uploading</string>
+    <string name="capture_upload_the_accident_spot_images">Capture/Upload the Accident Spot Images</string>
+    <string name="comments_optional">Comments (Optional)</string>
+    <string name="please_select_document_type">Please select Document Type</string>
+    <string name="capture_upload_the_document">Capture/Upload the document</string>
+    <string name="search_by_reg_no">Search by Reg No.</string>
+    <string name="no_records_found2">No Records Found</string>
+    <string name="claim_type2">Claim Type</string>
+    <string name="e0001">E0001</string>
+    <string name="chas64782">Chas64782</string>
+    <string name="year2">Year</string>
+    <string name="_2020">2020</string>
+    <string name="toyota">Toyota</string>
+    <string name="allion_premio">Allion Premio</string>
+    <string name="pol990">Pol990</string>
+    <string name="d31573587">D31573587</string>
+    <string name="k47329">K47329</string>
+    <string name="claim_date">Claim Date</string>
+    <string name="cra_id2" type="id">"Bima Yangu ID : "</string>
+    <string name="chassis_no">Chassis No</string>
+    <string name="certificate_type2">Certificate Type</string>
+    <string name="coveragetype">Coverage Type</string>
+    <string name="stolen_theft">Stolen/Theft</string>
+    <string name="claim_ref_id">Claim Ref ID</string>
+    <string name="_397">397</string>
+
+    <string name="permissions_required">To continue using the Bima Yangu app seamlessly, please ensure that all necessary permissions are enabled. You can easily manage these permissions by navigating to the app settings and ensuring that all required permissions are granted. By enabling all permissions, you will have access to the full functionality of the app.</string>
+    <string name="permissions_required_title">Permissions Required!</string>
+
+    <string name="_29_01_2020_29_42_76">29/01/2020 29:42:76</string>
+    <string name="assigned_garage">Assigned Garage</string>
+    <string name="cra_document">Bima Yangu\nDocument</string>
+    <string name="company_claim_form">Company Claim\nForm</string>
+    <string name="policy_information2">Policy Information</string>
+    <string name="incident_type">Incident Type</string>
+    <string name="location">Location</string>
+    <string name="geo_co_ordinates">Geo Co-ordinates</string>
+    <string name="date_amp_time_of_incident"><![CDATA[Date & Time of Incident]]></string>
+    <string name="status">Status</string>
+    <string name="policy_no2">Policy No</string>
+    <string name="type_of_cover">Type of Cover</string>
+    <string name="claim_type">Claim Type</string>
+    <string name="name">Name</string>
+    <string name="commencing_date">Commencing Date</string>
+    <string name="end_date">End Date</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="e_mail_id">E-Mail ID</string>
+    <string name="name2">Name</string>
+    <string name="phone">Phone #</string>
+    <string name="email_id">Email Id</string>
+    <string name="vehicle_information2">Vehicle Information</string>
+    <string name="login_user_information">Login User Information</string>
+    <string name="policy_holder_information">Policy Holder Information</string>
+    <string name="registration_no3">Registration No.</string>
+    <string name="certificate_no3">Certificate No.</string>
+    <string name="carrying_capacity">Carrying Capacity</string>
+    <string name="make2">Make</string>
+    <string name="model3">Model</string>
+    <string name="year_of_manufacture3">Year of Manufacture</string>
+    <string name="driver_information">Driver Information</string>
+    <string name="driving_licence_no">Driving Licence No.</string>
+    <string name="driving_licence_valid_from">Driving Licence Valid From</string>
+    <string name="driving_licence_valid_upto">Driving Licence Valid Upto</string>
+    <string name="service_provider_information">Service Provider Information</string>
+    <string name="internal_claims_user">Internal Claims User</string>
+    <string name="assessor">Assessor</string>
+    <string name="garage">Garage</string>
+    <string name="investigator">Investigator</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="ambulance_requested">Ambulance Requested</string>
+    <string name="towing_service_requested">Towing Service Requested</string>
+    <string name="called_police">Called Police</string>
+    <string name="vehicle_attachments">Vehicle Attachments</string>
+    <string name="claim_initiated">Claim Initiated</string>
+    <string name="front_bumber">Front Bumber</string>
+    <string name="bumbercheck">I’ll need to check the front bumber</string>
+    <string name="grievance_id">Grievance ID</string>
+    <string name="i_hereby_agree_to_the">I have read and agree to the</string>
+    <string name="kindly_scroll_down_to_read_the_complete_terms_and_conditions_and_accept_them">Kindly scroll down to read the complete terms and conditions.</string>
+    <string name="agree_terms_and_conditions">Please agree to our terms and conditions.</string>
+    <string name="incident_id">Incident id</string>
+    <string name="created_by">Created By</string>
+    <string name="mobile_number_">Mobile Number</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="add_vehicle_Text">Please add a vehicle to continue!</string>
+    <string name="welcome_to_aki_cra_app">Welcome to Bima Yangu App!</string>
+    <string name="welcomeValue">Using this App, insured personnel can report motor insurance-related claims instantly and get a faster response. To use this App, you need an active Kenya phone and a valid Motor Insurance certificate.</string>
+    <string name="info_about_the_permission">Info About the Permission</string>
+    <string name="locationPermissionValue">The location is necessary for reporting the exact location of the accident/incident/claim. This function gets activated only when the application is in use and does not work in the background. The primary value is when the user captures images, the location and time, and the date gets stamped—this also aids in the quick arrival of emergency services.</string>
+    <string name="camera">Camera</string>
+    <string name="cameraPermissionValue">The camera gets activated and accessed only when the application needs to add visual evidence at the time of vehicle registration and an accident. Images captured by the App are geo-tagged and time-stamped and, serve as visual evidence of the accident and can be compared with pictures of the vehicle before the incident. The camera is also accessed when the user does a video KYC to confirm details before the final submission.</string>
+    <string name="storage">Storage</string>
+    <string name="storagePermissionValue">The storage is local to the App and doesn\'t access the user\'s personal storage. Likewise, the App never accesses the user\'s other storage artifacts (ex: gallery/pictures).</string>
+    <string name="contacts">Contacts</string>
+    <string name="contactPermissionValue">The contacts are optional and for ease of adding emergency contacts using phone contacts. Instead of typing the details, the user can pick a person from the address book. However, all other contact details are not accessed or contacted in any way. The emergency contact information is encrypted and not visible to anyone else besides the customer or owner of the phone.</string>
+    <string name="phone_">Phone</string>
+    <string name="phonePermissionValue">The phone call function is accessed only when the victim of the accident has to call emergency support services, e.g., ambulance, police, or Towing services. In such a scenario, the user is provided numbers and redirected to the dial pad to call and avail of the trauma care.</string>
+    <string name="microphone">Microphone</string>
+    <string name="microphonePermissionValue">The microphone is used for recording the voice messages as part of the accident reporting only when the user explicitly clicks on the record function.</string>
+    <string name="proceed_">PROCEED</string>
+    <string name="no_thirdparty_were_involved">No ThirdParty were involved.</string>
+    <string name="view_thirdparty_details">View ThirdParty Details</string>
+
+    <string name="date">date</string>
+    <string name="registration_no_">Registration No.</string>
+    <string name="your_notification_will_be_visible_here">Your Notification Will Be visible here:</string>
+
+    <string-array name="claimadditionaldoc">
+        <item>Select the document type</item>
+        <item>Police Abstract</item>
+        <item>Investigator Report</item>
+        <item>Assessors Report</item>
+        <item>Valuation Report</item>
+        <item>Hospitals Report</item>
+        <item>Court Judgements</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="LifeInusreMsg">Please enter Kenya ID Number of Proposer to confirm the certification validation.</string>
+    <string name="KenyaId_Val">Kenya ID Number of Proposer <font color='#FF0000'>*</font> :</string>
+    <string name="EnterKenyaIdVal">Enter Kenya ID Number of Proposer</string>
+    <string name="kenya_id_Lable">Kenya ID Proposer</string>
+    <string name="certificate_number">Certificate Number</string>
+    <string name="vehicleInfoMsg">Please enter the Registration/Chassis number to verify your Motor insurance.</string>
+    <string name="vehicleRegistration">Vehicle Registration or Chassis Number <font color='#FF0000'>*</font> :</string>
+    <string name="checkDetailsMsg">Please Check Below Data With Physical Vehicle</string>
+    <string name="certificate_information">Certificate Information</string>
+    <string name="vehicle">Registration #</string>
+    <string name="chassis">Chassis #</string>
+    <string name="Engine">Engine #</string>
+    <string name="yearOfMan">Year Of Man.</string>
+    <string name="Tonnage">Tonnage</string>
+    <string name="LicenseToCarry">Licensed to Carry</string>
+    <string name="policy_">Policy #</string>
+    <string name="certificate_">Certificate</string>
+    <string name="vh_info">Vehicle Information</string>
+    <string name="KenyaIdDetails">Kenya Id Number <font color='#FF0000'>*</font> :</string>
+
+    <string name="policy_Number_label">Policy Number</string>
+    <string name="Kra_Pin_label">KRA PIN Proposer</string>
+    <string name="Kenya_id_Assure_label">Kenya ID Assured</string>
+    <string name="date_of_commencement_val">Date Of \nCommencement</string>
+    <string name="date_of_maturity_label">Date Of Maturity</string>
+    <string name="sum_assured_label">Sum Assured (Ksh)</string>
+    <string name="type_of_assurance_label">Type Of Assurance</string>
+    <string name="chassisHint">Enter Registration or Chassis number</string>
+    <string name="rescan">ReScan</string>
+    <string name="verify">Verify</string>
+    <string name="add_third_party"><u>Add Third Party</u></string>
+    <string name="cnt">cnt</string>
+    <string name="not_motor_vehicle_str">Alert the captured image is not identified as a vehicle please re capture again or you can proceed with the same image.</string>
+
+
+    <string name="invalid_crt">Invalid - Certificate and Reg No. information provided by you does not match with the certificate system.</string>
+
+    <string name="invalid_life_crt">Invalid - You have scanned an incorrect QR Code or provided invalid Kenya ID Proposer.</string>
+
+    <string-array name="chooseTheCauseOfTheftArray">
+        <item>--Select--</item>
+        <item>Car Jacking</item>
+        <item>While Parked</item>
+        <item>Other Reason</item>
+    </string-array>
+
+    <string name="continue_terms">Continue</string>
+    <string name="verify_certificate_secure">Verify Certificate - Secure</string>
+    <string name="verify_certificate_open">Verify Certificate - Open</string>
+    <string name="verify_certificate_life">Verify Certificate - Life</string>
+    <string name="verify_certificate_marine">Verify Certificate - Marine</string>
+    <string name="verify_certificate_pi">Verify Certificate - PI</string>
+    <string name="verification_history">Verification History</string>
+    <string name="information">Information</string>
+    <string name="user_id">User ID : </string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="help_videos">Help Videos</string>
+    <string name="verify_certificate_motor_insurance">Verify Certificate - Motor Insurance</string>
+    <string name="activate_certificate_by_ussd">Activate Certificate by USSD</string>
+    <string name="verify_certificate_life_insurance">Verify Certificate - Life Insurance</string>
+    <string name="verify_certificate_marine_insurance">Verify Certificate - Marine Insurance</string>
+    <string name="verify_certificate_pi_insurance">Verify Certificate - PI Insurance</string>
+    <string name="report_claim_by_whatsapp">Report Claim by WhatsApp</string>
+    <string name="introduction">Introduction</string>
+    <string name="verify_certificate_by_scan_secure">Verify Certificate by Scan - Secure</string>
+    <string name="verify_certificate_by_scan_open">Verify Certificate by Scan - Open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="noNetwork">Please check your network connection!</string>
+    <string name="vehicle_registration_or_chassis_number">Vehicle Registration or Chassis Number <font color='#FF0000'>*</font> :</string>
+    <string name="scan">RESCAN</string>
+    <string name="secure_code">Secure Code :</string>
+    <string name="ErrorMessage">Your Request has some technical issues. An incident is created and escalated to the Technical support team. You will be contacted soon for issue resolution.</string>
+
+    <string name="please_enter_the_registration_number_to_confirm_the_certification_validation">Please enter the Registration number to confirm the certification validation.</string>
+    <string name="please_check_the_below_data_with_physical_vehiclw">PLEASE CHECK THE BELOW DATA WITH PHYSICAL VEHICLE</string>
+    <string name="engine">Engine #</string>
+    <string name="make_model"><![CDATA[Make & Model]]></string>
+    <string name="license_to_carry">License to Carry</string>
+    <string name="tonnage">Tonnage</string>
+    <string name="please_enter_kenya_id_number_of_proposer_policy_owner_to_confirm_the_certification_validation">Please enter Kenya ID Number of Proposer / Policy Owner to confirm the certification validation.</string>
+    <string name="kenya_id_number_of_proposer">Kenya ID Number of Proposer <font color='#FF0000'>*</font> :</string>
+    <string name="claim_reporting_is_now_instant_with_the_aki_cra_app">CLAIM REPORTING IS NOW INSTANT WITH THE \'Bima Yangu\' APP</string>
+    <string name="download_app">DOWNLOAD THE APP</string>
+    <string name="scanning_timed_out">Scanning Timed Out</string>
+    <string name="scanning_timed_out_please_rescan">Scanning Timed out,Please Rescan</string>
+    <string name="lapec_certificate">LAPEC Certificate</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="kenya_id_proposer">Kenya ID Proposer</string>
+    <string name="kra_pin_proposer">KRA Pin Proposer</string>
+    <string name="kenya_id_assured">Kenya ID Assured</string>
+    <string name="date_of_commencement">Date of Commencement</string>
+    <string name="date_of_maturity">Date of Maturity</string>
+    <string name="sum_assured_ksh">Sum Assured (KSh)</string>
+    <string name="type_of_insurance">Type of Assurance</string>
+    <string name="user_id_">User id</string>
+    <string name="dmvic_policy_verification">DMVIC - Policy Verification</string>
+    <string name="all_rights_reserved">All rights reserved.</string>
+    <string name="certificate_reg">Certificate / Reg - #</string>
+    <string name="security_code">Security Code</string>
+    <string name="verify_certificate_using_manually">Verify Certificate using manually</string>
+    <string name="terms_and_condition_validation">Please accept the terms and conditions to continue.</string>
+    <string name="doctor_certificate">Health Certificate</string>
+    <string name="member_company_name">Member Company Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="occupation">Occupation</string>
+    <string name="specialization">Specialisation</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="cover_type">Cover Type</string>
+    <string name="trade_type">Trade Type</string>
+    <string name="mode">Mode of Transport</string>
+    <string name="voyage_from">Voyage From</string>
+    <string name="voyage_to">Voyage To</string>
+    <string name="loading_airport">Loading At</string>
+    <string name="destination_airport">Port of Discharge</string>
+    <string name="certificate__">Certificate</string>
+    <string name="tonnage_">Tonnage</string>
+    <string name="passenger">Number of Passengers</string>
+    <string name="category_of_use">Category of Use</string>
+    <string name="token_expired_error">Your session has expired. Please click to continue.</string>
+    <string name="ok"><font color="#231cff">OK</font></string>
+    <string name="invalid_you_have_scanned_an_incorrect_qr_code">Invalid - You have scanned an incorrect QR Code</string>
+    <string name="verify_certificate_marine_">Verify Certificate - marine</string>
+    <string name="verify_certificate_pi_">Verify Certificate - PI</string>
+    <string name="dmvic_verify_certificate">DMVIC - Verify Certificate</string>
+    <string name="retry">Retry</string>
+    <string name="exit">Exit</string>
+    <string name="transshipping_at">Transshipping at</string>
+    <string name="cancelled_date">Cancelled Date</string>
+    <string name="cancelled_reason">Cancelled Reason</string>
+    <string name="doctor_certificate_">Doctor Certificate</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="bima_yangu">Bima Yangu</string>
+
+    <string name="please_read_our_terms_and_conditions_carefully_before_using_this_app">Please read our Terms and Conditions carefully before using this app.</string>
+    <string name="i_agree_to_the">I agree to the</string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="Claim_title">Bima Yangu enables you to manage insurance claims seamlessly and access essential features related to your insurance policies.</string>
+
+    <string name="empty"></string>
+    <string name="search_location">Search Location</string>
+    <string name="incident_date_time">Incident Date &amp; Time</string>
+    <string name="use_current_location">Use current location</string>
+</resources>

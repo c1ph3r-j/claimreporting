@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".StolenImageDeclaration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/infoContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_2dp"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:text="@string/image_declaration"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/activity_margin_22dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/scroll_the_image_down_to_view_all_pictures"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_15dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <!-- <ListView
+             android:id="@+id/liststolenimgdeclareimages"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginStart="@dimen/activity_margin_10dp"
+             android:layout_marginTop="@dimen/activity_margin_15dp"
+             android:layout_marginEnd="@dimen/activity_margin_10dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+ -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/ImageDelcareViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_330dp"
+            android:layout_marginTop="@dimen/activity_margin_40dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingStart="@dimen/activity_margin_60dp"
+            android:paddingLeft="@dimen/activity_margin_60dp"
+            android:paddingTop="@dimen/activity_margin_20dp"
+            android:paddingEnd="@dimen/activity_margin_60dp"
+            android:paddingRight="@dimen/activity_margin_60dp"
+            android:paddingBottom="@dimen/activity_margin_20dp" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabDotsForImageDeclare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/lightdarkcolorgrey"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="@dimen/activity_margin_0dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/stolenbottomlistid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_5dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/claimsignaturePad"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_margin_100dp"
+                    android:layout_marginTop="@dimen/activity_margin_5dp"
+                    android:background="@android:color/darker_gray"
+                    android:padding="@dimen/activity_margin_5dp" />
+
+                <TextView
+                    android:id="@+id/signhereid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_25dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:gravity="center"
+                    android:text="@string/sign_here"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/activity_margin_30dp" />
+
+                <ImageView
+                    android:id="@+id/clearsingature"
+                    android:layout_width="@dimen/activity_margin_20dp"
+                    android:layout_height="@dimen/activity_margin_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_10dp"
+                    android:backgroundTint="@color/black"
+                    android:gravity="end|right"
+                    android:src="@drawable/clearsing"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textColorLink="@android:color/holo_blue_light" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/imagedeclareid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal|center"
+                android:backgroundTint="@color/purple_500"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:text="@string/submit_your_claim"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/activity_margin_18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

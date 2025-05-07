@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".SupportSuccess">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_10dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/infoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_5dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/activity_margin_70dp"
+                    android:layout_height="@dimen/activity_margin_70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sucesssupport" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcraid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:paddingStart="@dimen/activity_margin_10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/activity_margin_20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcraid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/activity_margin_18dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/backdashproceed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal|center"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:text="@string/go_to_dashboard"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_margin_18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

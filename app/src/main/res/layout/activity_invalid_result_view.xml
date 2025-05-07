@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvalidResultView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/invalid_crt"
+        android:id="@+id/invalidMsgView"
+        android:layout_margin="@dimen/activity_margin_16dp"
+        android:textSize="@dimen/activity_margin_20dp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="@dimen/activity_margin_8dp"/>
+
+
+</LinearLayout>

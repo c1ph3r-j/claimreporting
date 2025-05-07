@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AddEmergency">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_10dp"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginRight="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/editidnearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:layout_marginRight="@dimen/activity_margin_10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_25dp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/activity_margin_20dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtnearid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/choose_emergency_contact_n_optional"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_18dp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/colonnearid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:text="@string/collen"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_18dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/contactneardear"
+                                android:layout_width="@dimen/activity_margin_25dp"
+                                android:layout_height="@dimen/activity_margin_25dp"
+                                android:layout_marginEnd="@dimen/activity_margin_30dp"
+                                android:src="@drawable/contactpickernew" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/namenearlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_18dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editnearanddear"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_45dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:background="@drawable/edit_text"
+                        android:digits="qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/phnumnearlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_margin_9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/phone_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_18dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editnearphnno"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_45dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:background="@drawable/edit_text"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:inputType="number"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailidnearlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_margin_9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/email_id"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_18dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editemailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_45dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:background="@drawable/edit_text"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_20dp"
+                        android:orientation="vertical"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbars="vertical">
+
+                        <EditText
+                            android:id="@+id/adddearid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:backgroundTint="@color/black"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:text="@string/add"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:textColorLink="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelistnear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclernearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearRegProceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_margin_40dp"
+        android:background="@color/purple_500"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Btnuaddemprce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/latinotypeantartidaroundedbold"
+            android:text="@string/done"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_margin_18dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="@dimen/activity_margin_30dp"
+            android:layout_height="@dimen/activity_margin_30dp"
+            android:src="@drawable/ic_round_double_arrow_24" />
+    </LinearLayout>
+
+</LinearLayout>

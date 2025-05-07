@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/progress_loader"/>-->
+    <LinearLayout
+        android:id="@+id/Claimimgview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/activity_margin_10dp">
+
+            <TableLayout
+                android:id="@+id/step8Tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bordergray"
+                android:scrollbars="horizontal|vertical"
+                android:visibility="visible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_500">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="@dimen/activity_margin_12dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgcar"
+                            android:layout_width="@dimen/activity_margin_30dp"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            app:srcCompat="@drawable/car" />
+
+                        <TextView
+                            android:id="@+id/textviewregnoval"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:padding="@dimen/activity_margin_5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/activity_margin_12dp" />
+
+                        <!--                        <ImageView-->
+                        <!--                            android:id="@+id/Claimsucessfaif"-->
+                        <!--                            android:layout_width="@dimen/activity_margin_30dp"-->
+                        <!--                            android:layout_height="@dimen/activity_margin_30dp"-->
+                        <!--                            android:layout_marginLeft="@dimen/activity_margin_25dp" />-->
+
+                        <!--                        <ImageView-->
+                        <!--                            android:id="@+id/Claimimgview"-->
+                        <!--                            android:layout_width="@dimen/activity_margin_30dp"-->
+                        <!--                            android:layout_height="@dimen/activity_margin_30dp"-->
+                        <!--                            android:layout_gravity="end"-->
+                        <!--                            android:layout_marginLeft="@dimen/activity_margin_10dp"-->
+                        <!--                            app:srcCompat="@drawable/viewlist" />-->
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_5dp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/step8Tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="@dimen/activity_margin_2dp"
+                        android:paddingTop="@dimen/activity_margin_2dp"
+                        android:paddingEnd="@dimen/activity_margin_2dp"
+                        android:scrollbars="horizontal|vertical"
+                        android:visibility="visible">
+
+                        <!--                        <TableRow-->
+                        <!--                            android:layout_width="@dimen/activity_margin_347dp"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_marginTop="@dimen/activity_margin_4dp"-->
+                        <!--                            android:gravity="center_horizontal">-->
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin356dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/activity_margin_5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_margin_5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textviewrefid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/claim_ref_id"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textviewclaimtype"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                        android:text="@string/claim_type2"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_margin_5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textviewrefidval"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/_397"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp" />
+
+                                    <TextView
+                                        android:id="@+id/textviewclaimtypeval"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:paddingStart="@dimen/activity_margin_5dp"
+
+                                        android:text="@string/stolen_theft"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_margin_5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textviewpolno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/coveragetype"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textviewCerno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                        android:text="@string/certificate_no3"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_margin_5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textviewcoverageval"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/pol990"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp" />
+
+                                    <TextView
+                                        android:id="@+id/textviewcertifyval"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:paddingStart="@dimen/activity_margin_5dp"
+
+                                        android:text="@string/d31573587"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_12dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_1dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:background="@android:color/darker_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <!--                        </TableRow>-->
+                        <!--                        <View-->
+                        <!--                            android:id="@+id/view"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="@dimen/activity_margin_1dp"-->
+                        <!--                            android:layout_marginTop="@dimen/activity_margin_40dp"-->
+                        <!--                            android:background="@android:color/darker_gray"-->
+                        <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_margin_5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textviewregno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/certificate_type2"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textviewChassisno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                android:text="@string/chassis_no"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textviewEngineno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                android:text="@string/claim_date"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            android:layout_margin="@dimen/activity_margin_5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtvehicletype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/k47329"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                            <TextView
+                                android:id="@+id/textviewchassisval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                android:text="@string/chas64782"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                            <TextView
+                                android:id="@+id/textviewclaimdateval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:paddingStart="@dimen/activity_margin_5dp"
+                                android:text="@string/e0001"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_1dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:background="@android:color/darker_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_margin_5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textviewyear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/year2"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textviewmake"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                android:text="@string/make2"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textviewmodel"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/model3"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_20dp"
+                            android:layout_margin="@dimen/activity_margin_5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textviewyearval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:gravity="center_vertical"
+                                android:text="@string/_2020"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                            <TextView
+                                android:id="@+id/textviewmakeval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+
+                                android:text="@string/toyota"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                            <TextView
+                                android:id="@+id/textviewmodelval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:paddingStart="@dimen/activity_margin_5dp"
+                                android:text="@string/allion_premio"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+                        </LinearLayout>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

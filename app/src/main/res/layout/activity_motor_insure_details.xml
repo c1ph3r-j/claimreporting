@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightcolorgrey"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".GetMotorInsureDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latinotypeantartidaroundedbold"
+            android:padding="@dimen/activity_margin_20dp"
+            android:text="@string/vehicleInfoMsg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:paddingStart="@dimen/activity_margin_20dp"
+            android:paddingEnd="@dimen/activity_margin_10dp"
+            android:text="@string/vehicleRegistration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_16dp" />
+
+        <EditText
+            android:id="@+id/ChassisNoField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_50dp"
+            android:layout_marginStart="@dimen/activity_margin_20dp"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:layout_marginEnd="@dimen/activity_margin_20dp"
+            android:autofillHints="@null"
+            android:inputType="textCapCharacters"
+            android:background="@drawable/edit_text"
+            android:hint="@string/chassisHint"
+            android:padding="@dimen/activity_margin_10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/ReScanBtn"
+            android:layout_width="@dimen/activity_margin_0dp"
+            android:layout_height="@dimen/activity_margin_60dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/darkcolor"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:text="@string/rescan"
+            android:textSize="@dimen/activity_margin_16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/VerifyBtn"
+            android:layout_width="@dimen/activity_margin_0dp"
+            android:layout_height="@dimen/activity_margin_60dp"
+            android:layout_weight="5"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:text="@string/verify"
+            android:textSize="@dimen/activity_margin_16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

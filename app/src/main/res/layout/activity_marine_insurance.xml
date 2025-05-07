@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".marineinsurance.MarineInsurance">
+
+    <!-- INVALID LAYOUT-->
+    <LinearLayout
+        android:id="@+id/invalidQRCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+        android:layout_marginVertical="@dimen/activity_margin_10dp"
+        android:background="@color/rose_red"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/invalidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latinotypeantartidaroundedbold"
+            android:textStyle="bold"
+            android:padding="@dimen/activity_margin_25dp"
+            android:text="@string/invalid_you_have_scanned_an_incorrect_qr_code"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_margin_18dp" />
+
+    </LinearLayout>
+
+    <!--MAIN LAYOUT-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+            android:orientation="vertical">
+
+            <!--CERTIFICATE TITLE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_margin_10dp">
+
+                <TextView
+                    android:id="@+id/marineTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    tools:text="Cargo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:textStyle="bold"
+                    android:text="@string/certificate__"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_18dp" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--CERTIFICATE NUMBER-->
+                <TableRow
+                    android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                    android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:textStyle="bold"
+                        android:text="Certificate Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/colon"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/marineCertificateNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" PID0000245" />
+
+                        <TextView
+                            android:id="@+id/marineCertificateNumberVerification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text="(Genuine)" />
+
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <!--MEMBER COMPANY NAME-->
+                <TableRow
+                    android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                    android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:textStyle="bold"
+                        android:text="@string/member_company_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/colon"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/marineMemberCompanyName"
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                        android:textSize="@dimen/activity_margin_16dp"
+                        tools:text=" Alianz Insurance Company" />
+
+
+                </TableRow>
+
+                <!--POLICY NUMBER-->
+                <TableRow
+                    android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                    android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:textStyle="bold"
+                        android:text="@string/policy_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/colon"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/marinePolicyNumber"
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                        android:textSize="@dimen/activity_margin_16dp"
+                        tools:text=" PL35345" />
+
+
+                </TableRow>
+
+                <!--START DATE-->
+                <TableRow
+                    android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                    android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:textStyle="bold"
+                        android:text="@string/start_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/colon"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/marineStartDate"
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                        android:textSize="@dimen/activity_margin_16dp"
+                        tools:text=" 18/08/2023 8:37" />
+
+
+                </TableRow>
+
+                <!--END DATE-->
+                <TableRow
+                    android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                    android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:textStyle="bold"
+                        android:text="@string/end_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/colon"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/marineEndDate"
+                        android:layout_width="@dimen/activity_margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                        android:textSize="@dimen/activity_margin_16dp"
+                        tools:text=" 18/08/2024 8:37" />
+
+
+                </TableRow>
+
+
+                <!--CARGO LAYOUT-->
+                <TableLayout
+                    android:id="@+id/cargoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--COVER TYPE-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/cover_type"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineCoverType"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Open Cover" />
+
+
+                    </TableRow>
+
+                    <!--TRADE TYPE-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/trade_type"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineTradeType"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Export" />
+
+
+                    </TableRow>
+
+                    <!--MODE-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/mode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineMode"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Air" />
+
+
+                    </TableRow>
+
+                    <!--VOYAGE FROM-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/voyage_from"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineVoyageFrom"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Kenya" />
+
+
+                    </TableRow>
+
+                    <!--VOYAGE TO-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/voyage_to"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineVoyageTo"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Niger" />
+
+
+                    </TableRow>
+
+                    <!--LOADING AIRPORT-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/startingPoint"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/loading_airport"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineLoadingAirPort"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Nirobi ( NBO )" />
+
+
+                    </TableRow>
+
+                    <!--DESTINATION AIRPORT-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:id="@+id/modeOfTransport"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/destination_airport"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineDestinationAirPort"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Niamey ( NIM )" />
+
+
+                    </TableRow>
+
+                    <!--TRANSHIPPING-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/transshipping_at"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineTranshipping"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" Niamey ( NIM )" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+                <!--HULL LAYOUT-->
+                <TableLayout
+                    android:id="@+id/hullLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--REGISTRATION NUMBER-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/registration_number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineRegistrationNumber"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" JHS124" />
+
+
+                    </TableRow>
+
+                    <!--PORT OF REGISTRATION-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="Port of Registration"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marinePortOfRegistration"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" JHS124" />
+
+
+                    </TableRow>
+
+                    <!--TONNAGE-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/tonnage_"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineTonnage"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" 0" />
+
+
+                    </TableRow>
+
+                    <!--PASSENGER-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/passenger"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marinePassenger"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text="30" />
+
+
+                    </TableRow>
+
+                    <!--CATEGORY OF USE-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/category_of_use"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineCategoryOfUse"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text="Private" />
+
+
+                    </TableRow>
+
+                    <!--TERRITORIAL LIMIT-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="Territorial Limit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/marineTerritorialLimit"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text="Private" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <!--HULL LAYOUT-->
+                <TableLayout
+                    android:id="@+id/cencelledCertificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--REGISTRATION NUMBER-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/cancelled_date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/resultCancelledDate"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" JHS124" />
+
+
+                    </TableRow>
+
+                    <!--PORT OF REGISTRATION-->
+                    <TableRow
+                        android:layout_marginHorizontal="@dimen/activity_margin_5dp"
+                        android:layout_marginVertical="@dimen/activity_margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:textStyle="bold"
+                            android:text="@string/cancelled_reason"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latinotypeantartidaroundedbold"
+                            android:text="@string/colon"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/resultCancelledreason"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:textSize="@dimen/activity_margin_16dp"
+                            tools:text=" JHS124" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

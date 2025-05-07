@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".Police">
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/policepresent"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        tools:visibility="gone">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/activity_margin_5dp"-->
+    <!--            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+    <!--            android:layout_marginRight="@dimen/activity_margin_5dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:scrollbarStyle="outsideInset"-->
+    <!--            android:scrollbars="vertical">-->
+
+    <!--            <android.widget.SearchView-->
+    <!--                android:id="@+id/searchView"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+    <!--                android:iconifiedByDefault="false"-->
+    <!--                android:queryHint="Search by Police Station name" />-->
+    <!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:id="@+id/imageViewAdd"&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:layout_marginTop="@dimen/activity_margin_10dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:layout_marginBottom="@dimen/activity_margin_10dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;            android:src="@drawable/addgrey" />&ndash;&gt;-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <ListView-->
+    <!--                android:id="@+id/listserviceprovider"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="@dimen/activity_margin_10dp"-->
+    <!--                android:layout_marginTop="@dimen/activity_margin_10dp"-->
+    <!--                android:layout_marginEnd="@dimen/activity_margin_10dp"-->
+    <!--                android:divider="@android:color/transparent"-->
+    <!--                android:dividerHeight="@dimen/activity_margin_0dp"-->
+    <!--                android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                tools:listheader="Service Provider" />-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/policenorecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_margin_10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:gravity="center"
+            android:text="@string/clickherepolice"
+            android:textAlignment="center"
+            android:textColor="@color/bluehyperlink"
+            android:textSize="@dimen/activity_margin_25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:gravity="center"
+            android:text="(OR)"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dialpolice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:gravity="center"
+            android:text="Click here to Dial 999"
+            android:textAlignment="center"
+            android:textColor="@color/bluehyperlink"
+            android:textSize="@dimen/activity_margin_25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

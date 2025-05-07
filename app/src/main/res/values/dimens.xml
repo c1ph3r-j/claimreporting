@@ -1,0 +1,95 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin_1dp">1dp</dimen>
+    <dimen name="activity_margin_0dp">0dp</dimen>
+    <dimen name="activity_margin_2dp">2dp</dimen>
+    <dimen name="activity_margin_230dp">230dp</dimen>
+    <dimen name="activity_margin_5dp">5dp</dimen>
+    <dimen name="activity_margin_6dp">6dp</dimen>
+    <dimen name="activity_margin_10dp">10dp</dimen>
+    <dimen name="activity_margin_14dp">14dp</dimen>
+    <dimen name="activity_margin_320dp">320dp</dimen>
+    <dimen name="activity_margin_15dp">15dp</dimen>
+    <dimen name="activity_margin_9dp">9dp</dimen>
+    <dimen name="activity_margin_23dp">23dp</dimen>
+    <dimen name="activity_margin_45dp">45dp</dimen>
+    <dimen name="activity_margin_300dp">300dp</dimen>
+    <dimen name="activity_margin356dp">356dp</dimen>
+    <dimen name="activity_margin_12dp">12dp</dimen>
+    <dimen name="activity_margin_160dp">160dp</dimen>
+    <dimen name="activity_margin__7dp">7dp</dimen>
+    <dimen name="activity_margin_16dp">16dp</dimen>
+    <dimen name="activity_margin_3dp">3dp</dimen>
+    <dimen name="activity_margin_260dp">260dp</dimen>
+    <dimen name="activity_margin_14sp">14sp</dimen>
+    <dimen name="activity_margin_90dp">90dp</dimen>
+    <dimen name="activity_margin_72dp">72dp</dimen>
+    <dimen name="activity_margin_10sp">10sp</dimen>
+    <dimen name="activity_margin_400dp">400dp</dimen>
+    <dimen name="activity_margin_350dp">350dp</dimen>
+    <dimen name="activity_margin_410dp">410dp</dimen>
+    <dimen name="activity_margin_270dp">270dp</dimen>
+    <dimen name="activity_margin_7dp">7dp</dimen>
+    <dimen name="activity_margin_130dp">130dp</dimen>
+    <dimen name="activity_margin_293dp">293dp</dimen>
+    <dimen name="activity_margin_297dp">297dp</dimen>
+    <dimen name="activity_margin_13dp">13dp</dimen>
+    <dimen name="activity_margin_65dp">65dp</dimen>
+    <dimen name="activity_margin_110dp">110dp</dimen>
+    <dimen name="activity_margin_280dp">280dp</dimen>
+    <dimen name="activity_margin_330dp">330dp</dimen>
+
+
+    <dimen name="activity_margin_8dp">8dp</dimen>
+    <dimen name="activity_margin_120dp">120dp</dimen>
+    <dimen name="activity_margin_250dp">250dp</dimen>
+    <dimen name="activity_margin_55dp">55dp</dimen>
+    <dimen name="activity_margin_150dp">150dp</dimen>
+    <dimen name="activity_margin_27dp">27dp</dimen>
+    <dimen name="activity_margin_25dp">25dp</dimen>
+    <dimen name="activity_margin_40dp">40dp</dimen>
+    <dimen name="activity_margin_20dp">20dp</dimen>
+    <dimen name="activity_margin_17dp">17dp</dimen>
+    <dimen name="activity_margin_60dp">60dp</dimen>
+    <dimen name="activity_margin_30dp">30dp</dimen>
+    <dimen name="activity_margin_140dp">140dp</dimen>
+    <dimen name="activity_margin_170dp">170dp</dimen>
+    <dimen name="activity_margin_180dp">180dp</dimen>
+    <dimen name="activity_margin_200dp">200dp</dimen>
+    <dimen name="activity_margin_220dp">220dp</dimen>
+    <dimen name="activity_margin_26dp">26dp</dimen>
+    <dimen name="activity_margin_minus55dp">-55dp</dimen>
+    <dimen name="activity_margin_50dp">50dp</dimen>
+    <dimen name="activity_margin_22dp">22dp</dimen>
+    <dimen name="activity_margin_18dp">18dp</dimen>
+    <dimen name="activity_margin_100dp">100dp</dimen>
+    <dimen name="activity_margin_70dp">70dp</dimen>
+    <dimen name="activity_margin_4dp">4dp</dimen>
+    <dimen name="activity_margin_80dp">80dp</dimen>
+    <dimen name="activity_margin_19dp">19dp</dimen>
+    <dimen name="activity_margin_24dp">24dp</dimen>
+    <dimen name="activity_margin_35dp">35dp</dimen>
+
+
+    <dimen name="activity_margin_13sp">13sp</dimen>
+    <dimen name="activity_margin_25px">25px</dimen>
+    <dimen name="activity_margin_30dp_">-30dp</dimen>
+    <dimen name="activity_margin_68dp">68dp</dimen>
+    <dimen name="activity_margin_165dp">165dp</dimen>
+    <dimen name="activity_margin_52dp">52dp</dimen>
+    <dimen name="activity_margin_18sp">18sp</dimen>
+    <dimen name="activity_margin_40dp_">-40dp</dimen>
+    <dimen name="activity_margin_500dp">500dp</dimen>
+    <dimen name="activity_margin_30sp">30sp</dimen>
+    <dimen name="activity_margin_24sp">24sp</dimen>
+    <dimen name="activity_margin_22sp">22sp</dimen>
+    <dimen name="activity_margin_32dp">32dp</dimen>
+    <dimen name="activity_margin_347dp">347dp</dimen>
+    <dimen name="activity_margin_66dp">66dp</dimen>
+
+
+    <dimen name="activity_margin_20dp_">-20dp</dimen>
+    <dimen name="activity_margin_16sp">16sp</dimen>
+
+
+</resources>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".HelpVideos">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="@dimen/activity_margin_10dp">
+
+        <LinearLayout
+            android:id="@+id/lineuatenv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_10dp"
+            android:layout_marginTop="@dimen/activity_margin_15dp"
+            android:layout_marginRight="@dimen/activity_margin_10dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtregsuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center"
+                android:paddingStart="@dimen/activity_margin_10dp"
+                android:paddingEnd="@dimen/activity_margin_10dp"
+                android:text="@string/only_claim_registration_offline_video_will_be_loaded_if_you_dont_have_internet"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_18dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/declare1id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_50dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_0dp"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/activity_margin_0dp">
+
+                            <TableLayout
+                                android:id="@+id/txtvehicle"
+                                android:layout_width="@dimen/activity_margin_160dp"
+                                android:layout_height="@dimen/activity_margin_140dp"
+                                android:background="@drawable/edit_text"
+                                android:gravity="center"
+
+                                android:padding="@dimen/activity_margin_10dp"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/imageviewpdf"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/myvehicleblack" />
+
+                                <TextView
+                                    android:id="@+id/txtintrovideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center"
+                                    android:text="@string/cra_vehicle_registration"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_16dp" />
+                            </TableLayout>
+
+
+                            <TableLayout
+                                android:id="@+id/txtcra"
+                                android:layout_width="@dimen/activity_margin_160dp"
+                                android:layout_height="@dimen/activity_margin_140dp"
+                                android:layout_marginLeft="@dimen/activity_margin_12dp"
+                                android:background="@drawable/edit_text"
+                                android:gravity="center"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/imageverfy"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/icn_claim" />
+
+                                <TextView
+                                    android:id="@+id/txtverfycertificate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center"
+                                    android:text="@string/grievances"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_16dp" />
+                            </TableLayout>
+
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/declare1id2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_5dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_0dp"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/activity_margin_0dp">
+
+                            <TableLayout
+                                android:id="@+id/txtclaimCollision"
+                                android:layout_width="@dimen/activity_margin_160dp"
+                                android:layout_height="@dimen/activity_margin_140dp"
+                                android:background="@drawable/edit_text"
+                                android:gravity="center"
+                                android:padding="@dimen/activity_margin_10dp"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/imageCollision"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/myvehicleblack" />
+
+                                <TextView
+                                    android:id="@+id/txtCollision"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center"
+                                    android:text="@string/claim_collision"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_16dp" />
+                            </TableLayout>
+
+
+                            <TableLayout
+                                android:id="@+id/txtself"
+                                android:layout_width="@dimen/activity_margin_160dp"
+                                android:layout_height="@dimen/activity_margin_140dp"
+                                android:layout_marginLeft="@dimen/activity_margin_12dp"
+                                android:background="@drawable/edit_text"
+                                android:gravity="center"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/imageselfinvolving"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/icn_claim" />
+
+                                <TextView
+                                    android:id="@+id/txtselfinvolving"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center"
+                                    android:text="@string/claim_self_involving"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_16dp" />
+                            </TableLayout>
+
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/declare1id3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_5dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_0dp"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/activity_margin_0dp">
+
+                            <TableLayout
+                                android:id="@+id/txtclaimstolen"
+                                android:layout_width="@dimen/activity_margin_160dp"
+                                android:layout_height="@dimen/activity_margin_140dp"
+                                android:background="@drawable/edit_text"
+                                android:gravity="center"
+                                android:padding="@dimen/activity_margin_10dp"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/imagestolen"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/myvehicleblack" />
+
+                                <TextView
+                                    android:id="@+id/txtstolen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center"
+                                    android:text="@string/claim_stolen"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_16dp" />
+                            </TableLayout>
+
+
+                            <!--                            <TableLayout-->
+                            <!--                                android:id="@+id/txtofflineclaim"-->
+                            <!--                                android:layout_width="@dimen/activity_margin_160dp"-->
+                            <!--                                android:layout_height="@dimen/activity_margin_140dp"-->
+                            <!--                                android:layout_marginLeft="@dimen/activity_margin_12dp"-->
+                            <!--                                android:background="@drawable/edit_text"-->
+                            <!--                                android:gravity="center"-->
+                            <!--                                android:scrollbars="horizontal|vertical"-->
+                            <!--                                android:visibility="visible">-->
+
+                            <!--                                <ImageView-->
+                            <!--                                    android:id="@+id/imageviewofflineclaim"-->
+                            <!--                                    android:layout_width="@dimen/activity_margin_50dp"-->
+                            <!--                                    android:layout_height="@dimen/activity_margin_50dp"-->
+                            <!--                                    android:gravity="center"-->
+                            <!--                                    android:src="@drawable/myvehicleblack" />-->
+
+                            <!--                                <TextView-->
+                            <!--                                    android:id="@+id/txtofflineclaimvideo"-->
+                            <!--                                    android:layout_width="wrap_content"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                            <!--                                    android:gravity="center"-->
+                            <!--                                    android:text="@string/claim_registration_offline"-->
+                            <!--                                    android:textColor="@color/purple_500"-->
+                            <!--                                    android:textSize="@dimen/activity_margin_16dp" />-->
+                            <!--                            </TableLayout>-->
+
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+
+
+                <!--   <LinearLayout
+                       android:id="@+id/declare2id"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/activity_margin_10dp"
+                       android:layout_marginTop="@dimen/activity_margin_40dp"
+                       android:layout_marginBottom="@dimen/activity_margin_0dp"
+                       android:orientation="vertical">
+
+                       <TableLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:padding="@dimen/activity_margin_10dp"
+                           android:shrinkColumns="*"
+                           android:stretchColumns="*">
+
+                           <TableRow
+                               android:layout_width="match_parent"
+                               android:layout_height="@dimen/activity_margin_0dp"
+                               android:layout_weight="1"
+                               android:padding="@dimen/activity_margin_0dp">
+
+                               <TableLayout
+                                   android:id="@+id/txtofflineclaim"
+                                   android:layout_width="@dimen/activity_margin_160dp"
+                                   android:layout_height="@dimen/activity_margin_140dp"
+                                   android:background="@drawable/border"
+                                   android:gravity="center"
+                                   android:padding="@dimen/activity_margin_10dp"
+                                   android:scrollbars="horizontal|vertical"
+                                   android:visibility="visible">
+
+                                   <ImageView
+                                       android:id="@+id/imageviewofflineclaim"
+                                       android:layout_width="@dimen/activity_margin_50dp"
+                                       android:layout_height="@dimen/activity_margin_50dp"
+                                       android:gravity="center"
+                                       android:src="@drawable/myvehicleblack"
+                                       />
+
+                                   <TextView
+                                       android:id="@+id/txtofflineclaimvideo"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="serif"
+                                       android:gravity="center"
+                                       android:text="Claim Registration - Offline"
+                                       android:textColor="@color/appbutton"
+                                       android:textSize="@dimen/activity_margin_16dp"
+                                       />
+                               </TableLayout>
+
+                           </TableRow>
+
+
+                       </TableLayout>
+                   </LinearLayout>-->
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

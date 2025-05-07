@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@color/purple_500"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:text="@string/welcome_to_aki_cra"
+                    android:textSize="@dimen/activity_margin_25dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_5dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:paddingHorizontal="@dimen/activity_margin_10dp"
+                    android:text="Bima Yangu provides fast claim reporting and instant insurance certificate verification."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/activity_margin_18dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin_30dp"
+                android:layout_weight="10"
+                android:background="@drawable/custom_borderdashboard"
+                android:padding="@dimen/activity_margin_10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/activity_margin_0dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_15dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/activity_margin_20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                                android:layout_marginTop="@dimen/activity_margin_0dp"
+                                android:layout_marginBottom="@dimen/activity_margin_0dp"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_15dp"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:gravity="left"
+                                    android:text="Service by Category"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_20dp"
+                                android:layout_marginTop="@dimen/activity_margin_5dp"
+                                android:layout_marginEnd="@dimen/activity_margin_20dp"
+                                app:cardCornerRadius="@dimen/activity_margin_10dp"
+                                app:cardElevation="@dimen/activity_margin_4dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingBottom="@dimen/activity_margin_15dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/activity_margin_10dp"
+                                        android:weightSum="100">
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/activity_margin_0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="50"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/reportClaimBtn"
+                                                android:layout_width="@dimen/activity_margin_100dp"
+                                                android:layout_height="@dimen/activity_margin_90dp"
+                                                android:layout_margin="@dimen/activity_margin_10dp"
+                                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/activity_margin_60dp"
+                                                    android:layout_height="@dimen/activity_margin_60dp"
+                                                    android:layout_gravity="center"
+                                                    android:src="@drawable/appclaimnew"
+                                                    app:tint="@color/purple_500" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                                android:text="Report a Claim \non App"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/blackdark"
+                                                android:textSize="@dimen/activity_margin_14dp"
+                                                android:textStyle="normal" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/activity_margin_0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="50"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/reportClaimOnWhatsapp"
+                                                android:layout_width="@dimen/activity_margin_100dp"
+                                                android:layout_height="@dimen/activity_margin_90dp"
+                                                android:layout_margin="@dimen/activity_margin_10dp"
+                                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/activity_margin_70dp"
+                                                    android:layout_height="@dimen/activity_margin_70dp"
+                                                    android:layout_gravity="center"
+                                                    android:src="@drawable/whatsappclaimnew"
+                                                    app:tint="@color/purple_500" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                                android:text="Report a Claim\non Whatsapp"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/blackdark"
+                                                android:textSize="@dimen/activity_margin_14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/activity_margin_0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="50"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/verifyCertificateBtn"
+                                                android:layout_width="@dimen/activity_margin_100dp"
+                                                android:layout_height="@dimen/activity_margin_90dp"
+                                                android:layout_margin="@dimen/activity_margin_10dp"
+                                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/activity_margin_60dp"
+                                                    android:layout_height="@dimen/activity_margin_60dp"
+                                                    android:layout_gravity="center"
+                                                    android:src="@drawable/verifycertificatenew"
+                                                    app:tint="@color/purple_500" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                                android:text="Verify Certificate"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/blackdark"
+                                                android:textSize="@dimen/activity_margin_14dp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/activity_margin_0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="50"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/otherServicesBtn"
+                                                android:layout_width="@dimen/activity_margin_100dp"
+                                                android:layout_height="@dimen/activity_margin_90dp"
+                                                android:layout_margin="@dimen/activity_margin_10dp"
+                                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/activity_margin_52dp"
+                                                    android:layout_height="@dimen/activity_margin_72dp"
+                                                    android:layout_gravity="center"
+                                                    android:src="@drawable/dashboard_ic_3"
+                                                    app:tint="@color/purple_500" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                                android:text="Other Services"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/blackdark"
+                                                android:textSize="@dimen/activity_margin_14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginRight="@dimen/activity_margin_15dp"
+                                android:layout_marginBottom="@dimen/activity_margin_0dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:gravity="left"
+                                    android:text="Notifications"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:gravity="end"
+                                    android:text="View More >>"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="#3366CC"
+                                    android:textSize="@dimen/activity_margin_16dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                                android:layout_marginTop="-8dp"
+                                android:layout_marginRight="@dimen/activity_margin_5dp"
+                                android:minHeight="@dimen/activity_margin_200dp">
+
+                                <com.synnapps.carouselview.CarouselView
+                                    android:id="@+id/carouselView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:fillColor="@color/purple_500"
+                                    app:pageColor="#00000000"
+                                    app:radius="@dimen/activity_margin_6dp"
+                                    app:slideInterval="3000"
+                                    app:strokeColor="#FF777777"
+                                    app:strokeWidth="@dimen/activity_margin_1dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="10"-->
+    <!--        android:background="@color/purple_500"-->
+    <!--        tools:context=".Dashboard">-->
+
+
+    <!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+    <!--        android:id="@+id/bottomAppBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        app:fabCradleMargin="@dimen/activity_margin_10dp"-->
+    <!--        app:fabCradleRoundedCornerRadius="@dimen/activity_margin_10dp"-->
+    <!--        app:fabCradleVerticalOffset="@dimen/activity_margin_10dp">-->
+
+    <!--             -->
+    <!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--            android:id="@+id/bottomNavigationView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginEnd="@dimen/activity_margin_16dp"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            app:itemIconTint="@color/purple_500"-->
+    <!--            app:itemTextColor="@color/purple_500"-->
+    <!--            app:labelVisibilityMode="labeled"-->
+    <!--            app:menu="@menu/bottom_nav_menu" />-->
+
+    <!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_1dp"
+        android:background="@color/lightdarkcolorgrey" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="@color/purple_500"
+        app:itemTextColor="@color/purple_500"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</LinearLayout>

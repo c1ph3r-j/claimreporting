@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".MyVehicles">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/claimform"
+            android:layout_width="@dimen/activity_margin_0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/appTheme"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:longClickable="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:title="My Vehicle"
+            app:titleMarginStart="@dimen/activity_margin_20dp"
+            app:titleTextColor="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/lineuatenv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_10dp"
+            android:layout_marginTop="@dimen/activity_margin_5dp"
+            android:layout_marginRight="@dimen/activity_margin_10dp"
+            android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vehiclepresent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_25dp"
+                android:layout_marginRight="@dimen/activity_margin_10dp"
+                android:orientation="horizontal"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical">
+
+                <android.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edit_text"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search by Registration No." />
+
+                <!--        <EditText-->
+                <!--            android:id="@+id/imageViewAdd"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginLeft="-40dp"-->
+                <!--            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+                <!--            android:backgroundTint="@color/purple_500"-->
+                <!--            android:editable="false"-->
+                <!--            android:focusable="false"-->
+                <!--            android:gravity="center_horizontal"-->
+                <!--            android:inputType="textPersonName"-->
+                <!--            android:text="Add Vehicle"-->
+                <!--            android:textAllCaps="false"-->
+                <!--            android:textColor="@color/purple_500"-->
+                <!--            android:textColorLink="@color/purple_500" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageViewAdd"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="@dimen/activity_margin_10dp"-->
+                <!--                    android:layout_marginBottom="@dimen/activity_margin_10dp"-->
+                <!--                    android:src="@drawable/addgrey" />-->
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/activity_margin_10dp"-->
+            <!--                android:layout_marginTop="@dimen/activity_margin_10dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+            <!--                    android:text="@string/blue_color_indicates_the_own_vehicle"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="@dimen/activity_margin_14dp">-->
+
+            <!--                </TextView>-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+            <!--                    android:text="@string/orange_color_indicates_the_others_vehicle"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="@dimen/activity_margin_14dp">-->
+
+            <!--                </TextView>-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ListView
+                    android:id="@+id/listvehiclehistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="@dimen/activity_margin_0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vehiclenorecords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/no_records_found"
+                android:textAlignment="center"
+                android:textSize="@dimen/activity_margin_30dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

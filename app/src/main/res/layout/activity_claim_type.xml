@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaimType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightdarkcolorgrey">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_margin_10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/activity_margin_12dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/claimtypetxt"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/viewcollision"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_110dp"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/CollisionLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_16dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/imgcollision"
+                                    android:layout_width="@dimen/activity_margin_80dp"
+                                    android:layout_height="@dimen/activity_margin_80dp"
+                                    android:layout_marginEnd="@dimen/activity_margin_15dp"
+                                    android:src="@drawable/collisionimg" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/collisionheadertxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                        android:text="@string/collision"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_19dp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/collisiontittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_4dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/if_the_two_cars_met_with_an_accident"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_15dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/selfinvtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/SelfInvolvingLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_16dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/selfinvcert"
+                                    android:layout_width="@dimen/activity_margin_70dp"
+                                    android:layout_height="@dimen/activity_margin_70dp"
+                                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                                    android:src="@drawable/selfinvolveimg" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/selfinvheadertxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                        android:text="@string/selfinvolving"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_19dp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/selfinvtittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_4dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/selfinvolvingdesc"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_15dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/stoleninanimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_100dp"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/StolenOrTheftLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_16dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/imgstolen"
+                                    android:layout_width="@dimen/activity_margin_80dp"
+                                    android:layout_height="@dimen/activity_margin_80dp"
+                                    android:layout_marginRight="@dimen/activity_margin_12dp"
+                                    android:src="@drawable/stolenimg" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/stolenheadertxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                        android:text="@string/stolentheft"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_19dp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/stolentittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_4dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/stolentheftdesc"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_15dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/otherservinanimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_100dp"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/OtherServicesLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_16dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/imgotherserv"
+                                    android:layout_width="@dimen/activity_margin_65dp"
+                                    android:layout_height="@dimen/activity_margin_65dp"
+                                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                                    android:src="@drawable/otherservices" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/otherservheadertxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                        android:text="@string/other_services"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_19dp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/otherservtittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_4dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/if_the_two_cars_other_services"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_15dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

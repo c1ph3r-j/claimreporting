@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".ThirdPartyShare">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="@color/lightdarkcolorgrey">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/activity_margin_12dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/thirdpartyqr"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/viewcollision"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_100dp"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/sendLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_16dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/imgcollision"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:layout_marginRight="@dimen/activity_margin_15dp"
+                                    android:src="@drawable/blueetoothsend" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="@dimen/activity_margin_6dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/collisionheadertxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/send_your_information"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_17dp" />
+
+
+                                    <TextView
+                                        android:id="@+id/collisiontittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/the_information_captured_as_of_this_incident_will_be_send_to_the_near_by_third_party"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_14dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                    android:layout_marginRight="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/selfinvtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_130dp"
+                        android:layout_margin="@dimen/activity_margin_8dp"
+                        app:cardCornerRadius="@dimen/activity_margin_4dp"
+                        app:cardElevation="@dimen/activity_margin_5dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/receiveLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/activity_margin_12dp"
+                                android:weightSum="100">
+
+
+                                <ImageView
+                                    android:id="@+id/selfinvcert"
+                                    android:layout_width="@dimen/activity_margin_50dp"
+                                    android:layout_height="@dimen/activity_margin_50dp"
+                                    android:layout_marginRight="@dimen/activity_margin_15dp"
+                                    android:src="@drawable/blueetoothreceive" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="@dimen/activity_margin_6dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/selfinvheadertxt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_6dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/receive_your_third_party_information"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="@dimen/activity_margin_16dp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/selfinvtittletxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/activity_margin_4dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                        android:text="@string/the_information_captured_from_the_third_party_vehicle_will_be_send_to_your_mobile_via_bluetooth_as_part_of_this_incident"
+                                        android:textColor="@color/blackdark"
+                                        android:textSize="@dimen/activity_margin_14dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nextid"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_margin_50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_5dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/nexttxt"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SkipButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/SkipId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightdarkcolorgrey"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:text="@string/skip_text"
+                    android:textColor="@color/bluehyperlink"
+                    android:textSize="@dimen/activity_margin_20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_30dp"
+                    android:layout_height="@dimen/activity_margin_30dp"
+                    android:paddingEnd="@dimen/activity_margin_10dp"
+                    android:src="@drawable/ic_round_double_arrow_24"
+                    app:tint="@color/bluehyperlink">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

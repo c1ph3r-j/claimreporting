@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyCertificate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/lightdarkcolorgrey">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/activity_margin_50dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/activity_margin_12dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                        android:text="@string/regvalitxt"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_40dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtthirdpartyno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/reasonselect"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/blackdark"
+                        android:textSize="@dimen/activity_margin_17dp" />
+
+
+                    <Spinner
+
+                        android:id="@+id/spinnerreason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="@dimen/activity_margin_0dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_border"
+                        android:ellipsize="none"
+                        android:entries="@array/reasontype"
+                        android:inputType="textMultiLine"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:singleLine="false"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_20dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtcertno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_margin_0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/regveritxt"
+                        android:textAlignment="textStart"
+                        android:textColor="#444443"
+                        android:textSize="@dimen/activity_margin_17dp" />
+
+
+                    <EditText
+                        android:id="@+id/editcertno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="@dimen/activity_margin_0dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:background="@drawable/custom_border"
+                        android:digits="1234567890qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="xxxxxxxx"
+                        android:inputType="text"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_5dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/verifytxt"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

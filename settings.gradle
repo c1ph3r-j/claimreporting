@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven {url "https://atlas.microsoft.com/sdk/android"}
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url "https://atlas.microsoft.com/sdk/android"}
+        maven {url 'https://jitpack.io' }
+        flatDir {
+            dirs "${rootDir}/../aars"
+        }
+    }
+}
+
+rootProject.name = "claimreporting"
+include ':app'
+include ':carouselview'

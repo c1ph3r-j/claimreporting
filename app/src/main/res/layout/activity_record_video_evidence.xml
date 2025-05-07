@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordVideoEvidence">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/video_evidence_optional"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_22dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imageView"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="@dimen/activity_margin_50dp"-->
+            <!--            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+            <!--            android:layout_marginBottom="@dimen/activity_margin_0dp"-->
+            <!--            android:src="@drawable/step41_1" />-->
+
+            <TextView
+                android:id="@+id/txtregsuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center"
+                android:text="@string/to_provide_video_evidence_click_the_record_button_on_the_left_and_then_speak_the_text_displayed"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtregsuccessnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_20dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center"
+                android:text="@string/upon_completion_please_click_the_stop_button_on_the_right"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/switchCamBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin_10dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/activity_margin_10dp"
+                android:paddingEnd="@dimen/activity_margin_10dp"
+                android:text="Switch Front Camera"
+                android:textColor="@color/bluehyperlink"
+                android:textSize="@dimen/activity_margin_16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_230dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextureView
+                    android:id="@+id/textureView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/activity_margin_0dp" />
+
+
+                <ImageButton
+                    android:id="@+id/recordstpid"
+                    android:layout_width="@dimen/activity_margin_70dp"
+                    android:layout_height="@dimen/activity_margin_60dp"
+                    android:layout_alignTop="@+id/recordid"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/activity_margin_293dp"
+                    android:layout_marginBottom="@dimen/activity_margin_100dp"
+                    android:src="@drawable/icn_stop"
+                    android:text="@string/video_play" />
+
+
+                <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/recordid"
+                    android:layout_alignStart="@id/recordid"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/activity_margin_25dp"
+                    android:visibility="invisible" />
+
+
+                <ImageButton
+                    android:id="@+id/recordid"
+                    android:layout_width="@dimen/activity_margin_70dp"
+                    android:layout_height="@dimen/activity_margin_60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="@dimen/activity_margin_297dp"
+                    android:layout_marginBottom="@dimen/activity_margin_100dp"
+                    android:src="@drawable/icn_record"
+                    android:text="@string/cam_here" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple_500"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/visualevidencenext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_margin_20dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/next2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

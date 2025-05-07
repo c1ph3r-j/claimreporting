@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".DriverMapping">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_margin_60dp"
+        android:orientation="vertical"
+        tools:context=".DriverMapping">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/infoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:orientation="vertical">
+
+                <!--<ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_margin_50dp"
+                    android:layout_marginTop="@dimen/activity_margin_15dp"
+                    android:layout_marginBottom="@dimen/activity_margin_0dp"
+                    />-->
+                <!--android:src="@drawable/step3_2"-->
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_50dp"
+                    android:layout_marginTop="@dimen/activity_margin_2dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:text="@string/link_driver_profile_optional"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addveclinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                android:layout_marginTop="@dimen/activity_margin_20dp"
+                android:layout_marginRight="@dimen/activity_margin_15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adddriverid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="@color/black"
+
+                    android:focusable="false"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:paddingLeft="@dimen/activity_margin_15dp"
+                    android:paddingRight="@dimen/activity_margin_15dp"
+                    android:text="@string/add_driver_profile"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textColorLink="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtdriverrecordtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_20dp"
+                    android:layout_marginRight="@dimen/activity_margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent">-->
+
+
+            <!--            <ListView-->
+            <!--                android:id="@+id/listdrivermapping"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:minHeight="@dimen/activity_margin_300dp"-->
+            <!--                />-->
+
+
+            <!--        </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/listdrivermapping"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/transparent"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:dividerHeight="@dimen/activity_margin_2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentBottom="true"-->
+
+        <!--        android:gravity="bottom|center"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/driverproceed"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_gravity="center_horizontal|center"-->
+        <!--            android:backgroundTint="@color/appbutton"-->
+        <!--            android:text="NEXT"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="#F1ECEC"-->
+        <!--            android:textSize="@dimen/activity_margin_18sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--    </LinearLayout>-->
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/driverproceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/prcButtonTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/skip"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

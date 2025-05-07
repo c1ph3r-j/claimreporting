@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_8dp"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:layout_marginRight="@dimen/activity_margin_8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:id="@+id/step8Tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bordergray"
+                android:backgroundTint="@color/white"
+                android:scrollbars="horizontal|vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/bordergray"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/colornotification"
+                        android:layout_width="@dimen/activity_margin_25dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/purple_500" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/txtnotification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_margin="@dimen/activity_margin_3dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:paddingEnd="@dimen/activity_margin_10dp"
+                                    android:text="@string/front_bumber"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_14dp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imgview"
+                                    android:layout_width="@dimen/activity_margin_25dp"
+                                    android:layout_height="@dimen/activity_margin_25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/activity_margin_3dp"
+                                    app:srcCompat="@drawable/viewlist" />
+
+                                <ImageView
+                                    android:id="@+id/deletenotification"
+                                    android:layout_width="@dimen/activity_margin_35dp"
+                                    android:layout_height="@dimen/activity_margin_35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/activity_margin_3dp"
+                                    app:srcCompat="@drawable/closeicon" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_margin_5dp"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/activity_margin_8dp">
+
+                                <TextView
+                                    android:id="@+id/txtdescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_margin_5dp"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:paddingBottom="@dimen/activity_margin_10dp"
+                                    android:text="@string/bumbercheck"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_14dp" />
+
+                            </TableRow>
+
+                            <!--  <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                                android:layout_marginTop="@dimen/activity_margin_5dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginRight="@dimen/activity_margin_5dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/txtnotification"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="Welcome"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtdescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="Hi welcome to cra app"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/activity_margin_5dp"
+                                android:layout_marginRight="@dimen/activity_margin_5dp"
+                                android:layout_gravity="right"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/deletenotification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    app:srcCompat="@drawable/closeicon" />
+
+                                <ImageView
+                                    android:id="@+id/imgview"
+                                    android:layout_width="@dimen/activity_margin_30dp"
+                                    android:layout_height="@dimen/activity_margin_30dp"
+                                    android:layout_gravity="right"
+                                    app:srcCompat="@drawable/viewlist_black" />
+                            </LinearLayout>-->
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+
+        <!--  <TableLayout
+            android:id="@+id/step8Tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bordergray"
+            android:paddingStart="@dimen/activity_margin_0dp"
+            android:paddingTop="@dimen/activity_margin_0dp"
+            android:paddingEnd="@dimen/activity_margin_0dp"
+            android:stretchColumns="0"
+            android:scrollbars="horizontal|vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_margin_0dp"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:background="@android:color/darker_gray"
+                android:rotation="-270" />
+
+          &lt;!&ndash;  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:orientation="vertical">&ndash;&gt;
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:text="Welcome"
+                        android:textSize="@dimen/activity_margin_14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textnotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:text="Hello welcome to this "
+                        android:textSize="@dimen/activity_margin_14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+         &lt;!&ndash;   </LinearLayout>&ndash;&gt;
+
+
+
+
+        </TableLayout>-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

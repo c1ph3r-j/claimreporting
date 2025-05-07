@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CertificateResults">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_15dp"
+                    android:layout_marginRight="@dimen/activity_margin_5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/activity_margin_12dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                android:text="@string/certinfotxt"
+                                android:textAlignment="center"
+                                android:textColor="@color/purple_500"
+                                android:textSize="@dimen/activity_margin_18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:id="@+id/txtdigitalpolicystdt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="@string/certnum"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/txtdigitalpolicystdcolumn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/editpolicystdt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="A131313131"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/activity_margin_18dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:id="@+id/txttypecert"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="Type of Certificate"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/txttypecertcolumn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/edittypecertdt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="A131313131"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/activity_margin_18dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_2dp"
+                            android:layout_marginLeft="@dimen/activity_margin_0dp"
+                            android:layout_marginTop="@dimen/activity_margin_30dp"
+                            android:layout_marginRight="@dimen/activity_margin_0dp"
+                            android:layout_marginBottom="@dimen/activity_margin_10dp"
+                            android:background="@drawable/dash_line_vertical"
+                            android:layerType="software" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/activity_margin_12dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                android:text="@string/vechinfotxt"
+                                android:textAlignment="center"
+                                android:textColor="@color/purple_500"
+                                android:textSize="@dimen/activity_margin_18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:id="@+id/txtvechnodt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="@string/vechno"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/txtvechnocolumn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/editvechnodt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="A131313131"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/activity_margin_18dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:id="@+id/txtchassisno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/activity_margin_10dp"
+                                    android:text="@string/chassinum"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/txtchassisnocolumn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/activity_margin_15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_margin_5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/editchassisnodt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="A131313131"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/activity_margin_18dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_2dp"
+                            android:layout_marginLeft="@dimen/activity_margin_0dp"
+                            android:layout_marginTop="@dimen/activity_margin_30dp"
+                            android:layout_marginRight="@dimen/activity_margin_0dp"
+                            android:layout_marginBottom="@dimen/activity_margin_10dp"
+                            android:background="@drawable/dash_line_vertical"
+                            android:layerType="software" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

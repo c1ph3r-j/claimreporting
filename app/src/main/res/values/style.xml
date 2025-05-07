@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme as needed -->
+    </style>
+    <style name="customRadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="buttonTint">#C3BE49</item>
+    </style>
+    <style name="customCheckBox" parent="Theme.AppCompat">
+        <item name="buttonTint">@drawable/custom_check_box</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    android:orientation="vertical"
+    tools:context=".ThirdPartyDetails">
+
+    <TextView
+        android:id="@+id/headingThirdPartyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_20dp"
+        android:layout_marginTop="@dimen/activity_margin_20dp"
+        android:layout_marginRight="@dimen/activity_margin_20dp"
+        android:fontFamily="@font/latinotypeantartidaroundedbold"
+        android:text="List of third parties were involved:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/activity_margin_20dp" />
+
+    <ListView
+        android:id="@+id/layoutForThirdPartyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/activity_margin_10dp" />
+
+
+    <TextView
+        android:id="@+id/noRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_margin_10dp"
+        android:fontFamily="@font/latinotypeantartidaroundedbold"
+        android:gravity="center"
+        android:text="@string/no_thirdparty_were_involved"
+        android:textColor="@color/lightgrey"
+        android:textSize="@dimen/activity_margin_30dp" />
+
+</LinearLayout>

@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".OtherServices">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:paddingBottom="@dimen/activity_margin_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:layout_marginRight="@dimen/activity_margin_15dp"
+                android:layout_marginBottom="@dimen/activity_margin_0dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_5dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:text="Claim Services"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                app:cardCornerRadius="@dimen/activity_margin_10dp"
+                app:cardElevation="@dimen/activity_margin_4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/claimDocumentationBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/claim_doc_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Claim Documentation Addition"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/myClaimsBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/my_claims_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="My Claims"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/myVehiclesBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/my_vehicles_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="My Vehicles"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="@dimen/activity_margin_0dp"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_weight="25"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                            <androidx.cardview.widget.CardView-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                app:cardCornerRadius="@dimen/activity_margin_8dp"-->
+                        <!--                                app:contentPadding="@dimen/activity_margin_10dp"-->
+                        <!--                                android:id="@+id/reportClaimWhatsappBtn"-->
+                        <!--                                android:backgroundTint="@color/lightdarkcolorgrey"-->
+                        <!--                                android:layout_margin="@dimen/activity_margin_10dp">-->
+
+                        <!--                                <ImageView-->
+                        <!--                                    android:layout_width="@dimen/activity_margin_52dp"-->
+                        <!--                                    android:layout_height="@dimen/activity_margin_40dp"-->
+                        <!--                                    android:layout_gravity="center"-->
+                        <!--                                    app:tint="@color/purple_500"-->
+                        <!--                                    android:src="@drawable/whatsapp_ic" />-->
+
+                        <!--                            </androidx.cardview.widget.CardView>-->
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:fontFamily="@font/latinotypeantartidaroundedlight"-->
+                        <!--                                android:text="Report Claim Via Whatsapp"-->
+                        <!--                                android:textAlignment="center"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/activity_margin_12dp" />-->
+
+                        <!--                        </LinearLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:layout_marginBottom="@dimen/activity_margin_0dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_5dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:gravity="left"
+                    android:text="Verification Services"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                app:cardCornerRadius="@dimen/activity_margin_10dp"
+                app:cardElevation="@dimen/activity_margin_4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/verifyMotorCertificateBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/motor_verify_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:breakStrategy="simple"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Verify Motor Certificate"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/verifyLifeCertificateBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/life_insurance_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Verify Life Certificate"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/verifyMarineCertificate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/life_insurance_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Verify Marine Certificate"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/verifyPiCertificate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/life_insurance_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Verify PI Certificate"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_15dp"
+                android:layout_marginTop="@dimen/activity_margin_0dp"
+                android:layout_marginBottom="@dimen/activity_margin_0dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginBottom="@dimen/activity_margin_5dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:gravity="left"
+                    android:text="Support Services"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                app:cardCornerRadius="@dimen/activity_margin_10dp"
+                app:cardElevation="@dimen/activity_margin_4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/supportBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/company_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:breakStrategy="simple"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Connect With Insurance Company"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/consumerVideosBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/consumer_videos_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Consumer Videos"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/reportGrievanceBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/grievance_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Report Grievance"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/ambulanceServicesBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ambulance_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Connect with Ambulance"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="@dimen/activity_margin_10dp"
+                        android:paddingEnd="@dimen/activity_margin_10dp"
+                        android:paddingBottom="@dimen/activity_margin_10dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/towingServicesBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/tow_truck_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Connect with Towing Services"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/policeServicesBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_10dp"
+                                android:backgroundTint="@color/lightdarkcolorgrey"
+                                app:cardCornerRadius="@dimen/activity_margin_8dp"
+                                app:contentPadding="@dimen/activity_margin_10dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_margin_52dp"
+                                    android:layout_height="@dimen/activity_margin_40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/police_ic"
+                                    app:tint="@color/purple_500" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                android:text="Connect with Police"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/activity_margin_12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_1dp"
+        android:background="@color/lightdarkcolorgrey" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="@color/purple_500"
+        app:itemTextColor="@color/purple_500"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="@dimen/activity_margin_350dp"
+    android:layout_height="@dimen/activity_margin_400dp"
+    android:layout_margin="@dimen/activity_margin_10dp"
+    android:backgroundTint="@color/white"
+    tools:context=".StolenImageViewFragment">
+
+    <ImageView
+        android:id="@+id/stolenImageViewForViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+
+</FrameLayout>

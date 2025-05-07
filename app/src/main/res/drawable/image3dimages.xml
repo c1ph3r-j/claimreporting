@@ -1,0 +1,17 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/claimimgaccdash"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@drawable/dashboardicon2"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/dashboardicon5"
+        android:maxLevel="2" />
+    <item
+        android:drawable="@drawable/dashboardicon3"
+        android:maxLevel="3" />
+    <item
+        android:drawable="@drawable/dashboardicon1"
+        android:maxLevel="4" />
+</level-list>

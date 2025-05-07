@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightdarkcolorgrey"
+        tools:ignore="UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_corners">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/lightdarkcolorgrey"
+                            android:orientation="vertical"
+                            android:paddingStart="@dimen/activity_margin_16dp"
+                            android:paddingEnd="@dimen/activity_margin_16dp"
+                            android:paddingBottom="@dimen/activity_margin_16dp">
+
+                            <ImageView
+                                android:id="@+id/closeicon"
+                                android:layout_width="@dimen/activity_margin_45dp"
+                                android:layout_height="@dimen/activity_margin_45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/activity_margin_12dp"
+                                android:src="@drawable/iconback" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_margin_10dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginRight="@dimen/activity_margin_10dp"
+                                android:orientation="vertical"
+                                tools:ignore="UseCompoundDrawables">
+
+
+                                <!--                                <TextView-->
+                                <!--                                    android:layout_width="match_parent"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:layout_marginTop="@dimen/activity_margin_16dp"-->
+                                <!--                                    android:layout_marginBottom="@dimen/activity_margin_8dp"-->
+                                <!--                                    android:fontFamily="@font/latinotypeantartidaroundedbold"-->
+                                <!--                                    android:text="@string/loginitxt"-->
+                                <!--                                    android:textAlignment="center"-->
+                                <!--                                    android:textColor="@color/blackdark"-->
+                                <!--                                    android:textSize="@dimen/activity_margin_25dp"-->
+                                <!--                                    android:textStyle="bold" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                                    android:layout_marginBottom="@dimen/activity_margin_10dp"
+                                    android:src="@drawable/claimacc"
+                                    tools:ignore="ContentDescription" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/activity_margin_15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/activity_margin_16dp"
+                                    android:layout_marginBottom="@dimen/activity_margin_8dp"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:text="@string/loginitxtnew"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blackdark"
+                                    android:textSize="@dimen/activity_margin_20dp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/activity_margin_55dp"
+                                    android:layout_marginTop="@dimen/activity_margin_15dp"
+                                    android:background="@drawable/custom_border"
+                                    android:orientation="horizontal"
+
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/emailricon"
+                                        android:layout_width="@dimen/activity_margin_27dp"
+                                        android:layout_height="@dimen/activity_margin_27dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="@dimen/activity_margin__7dp"
+                                        android:layout_marginTop="@dimen/activity_margin_15dp"
+                                        android:src="@drawable/ic_baseline_email_24"
+                                        tools:ignore="ContentDescription,TooDeepLayout" />
+
+
+                                    <EditText
+                                        android:id="@+id/emailid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/activity_margin_40dp"
+                                        android:layout_marginTop="@dimen/activity_margin_8dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/latinotypeantartidaroundedlight"
+                                        android:hint="@string/emailid"
+                                        android:padding="@dimen/activity_margin_10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/darkcolor" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/activity_margin_20dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/termstxtview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:text="@string/signinagree"
+                                    android:textColor="@color/blackdark"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/termconditionsregisterlin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/termsconditionclick"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                        android:text="@string/termsuse"
+                                        android:textColor="@color/bluehyperlink"
+                                        android:textSize="@dimen/activity_margin_15dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/andclick"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="@dimen/activity_margin_5dp"
+                                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                        android:text="@string/amp"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/activity_margin_14dp" />
+
+                                    <TextView
+                                        android:id="@+id/privacyclick"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                        android:text="@string/preivpolicy"
+                                        android:textColor="@color/bluehyperlink"
+                                        android:textSize="@dimen/activity_margin_15dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/activity_margin_20dp"
+                                android:gravity="center_horizontal">
+
+
+                                <ImageView
+                                    android:id="@+id/nextlogin"
+                                    android:layout_width="@dimen/activity_margin_60dp"
+                                    android:layout_height="@dimen/activity_margin_60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/nexticonew" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+
+    tools:context=".OfflineClaimPending">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_10dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtregsuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_50dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center"
+                android:text="@string/offlineMsg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_25dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtvechid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingStart="@dimen/activity_margin_10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_weight="1"-->
+
+            <!--                android:gravity="bottom|center"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/Btnuviewpdf"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentBottom="true"-->
+            <!--                    android:layout_gravity="center_horizontal|center"-->
+            <!--                    android:backgroundTint="@color/appbutton"-->
+            <!--                    android:text="VIEW PDF"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textColor="#F1ECEC"-->
+            <!--                    android:textSize="@dimen/activity_margin_18sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_margin_10dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/Btnuclaimcancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal|center"
+                        android:backgroundTint="@color/purple_500"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/cancel_offline_claim"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/activity_margin_17dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/Btnuclaimoffsubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_margin_60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal|center"
+                        android:backgroundTint="@color/purple_500"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/submit_offline_claim"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/activity_margin_17dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    >-->
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/Btnuturninternet"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_alignParentBottom="true"-->
+                <!--                        android:layout_gravity="center_horizontal|center"-->
+                <!--                        android:backgroundTint="@color/appbuttonnew"-->
+                <!--                        android:text="TURN ON YOUR INTERNET"-->
+                <!--                        android:textAlignment="center"-->
+                <!--                        android:textColor="#F1ECEC"-->
+                <!--                        android:textSize="@dimen/activity_margin_18dp"-->
+                <!--                        android:textStyle="bold" />-->
+
+                <!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

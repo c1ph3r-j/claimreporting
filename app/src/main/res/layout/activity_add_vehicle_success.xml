@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AddVehicleSuccess">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtregsuccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_30dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_margin_20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtvehcid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:paddingStart="@dimen/activity_margin_10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Btnuvehicleviewpdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:paddingStart="@dimen/activity_margin_10dp"
+                    android:paddingEnd="@dimen/activity_margin_10dp"
+                    android:text="@string/view_document"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="@dimen/activity_margin_18dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_100dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/weltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/activity_margin_25dp"
+                    android:layout_marginBottom="@dimen/activity_margin_20dp"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:text="@string/would_you_like_to_know_more_about_motor_insurance_and_claims"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/activity_margin_17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/activity_margin_5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/videoclaim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_20dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:gravity="center"
+                        android:text="@string/_1_how_to_report_claims"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/videoclaim"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/activity_margin_20dp"-->
+                    <!--                        android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                    <!--                        android:paddingStart="@dimen/activity_margin_10dp"-->
+                    <!--                        android:text="@string/click_here"-->
+                    <!--                        android:textAlignment="center"-->
+                    <!--                        android:textColor="@android:color/holo_blue_light"-->
+                    <!--                        android:textSize="@dimen/activity_margin_16dp"-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        tools:ignore="RtlSymmetry" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/activity_margin_5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/videomotorclaim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_40dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:text="@string/_2_general_information_about_nmotor_insurance_claims"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/videomotorclaim"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="@string/click_here"-->
+                    <!--                        android:layout_marginStart="@dimen/activity_margin_20dp"-->
+                    <!--                        android:textAlignment="viewStart"-->
+                    <!--                        android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                    <!--                        android:textColor="@android:color/holo_blue_light"-->
+                    <!--                        android:textSize="@dimen/activity_margin_18dp"-->
+                    <!--                        android:textStyle="bold" />-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Btnuvehiclebacktohome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_margin_60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/activity_margin_18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/activity_margin_30dp"
+            android:layout_height="@dimen/activity_margin_30dp"
+            android:src="@drawable/ic_round_double_arrow_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

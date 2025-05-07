@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    android:layout_height="match_parent"
+    tools:context=".UpdateVersionScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/activity_margin_10dp"
+                    app:cardCornerRadius="@dimen/activity_margin_8dp"
+                    app:contentPadding="@dimen/activity_margin_8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageupdate"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="start"
+                            android:src="@drawable/bimayangicon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/activity_margin_8dp"
+                    android:layout_margin="@dimen/activity_margin_8dp"
+                    app:cardElevation="@dimen/activity_margin_8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="#FFFCFC"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:visibility="visible">
+
+                            <TableLayout
+                                android:id="@+id/step8Tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:padding="0dp"
+                                android:scrollbars="horizontal|vertical"
+                                android:visibility="visible">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/step8Head"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/lightgrey"
+                                        android:fontFamily="serif"
+                                        android:padding="18dp"
+                                        android:text="Mandatory Update Available!"
+                                        android:textColor="@color/white"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/stepnewver"
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:fontFamily="serif"
+                                        android:paddingLeft="18dp"
+                                        android:paddingTop="18dp"
+                                        android:text="New Version"
+                                        android:textColor="@color/black"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/stepoldverid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:fontFamily="serif"
+                                        android:padding="18dp"
+                                        android:text="1.0.5"
+                                        android:textColor="@color/black"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </TableRow>
+
+                                <View
+                                    android:id="@+id/SplitLine_hor3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/black" />
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/stepoldver"
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:fontFamily="serif"
+                                        android:paddingLeft="18dp"
+                                        android:paddingTop="18dp"
+                                        android:text="Your Version"
+                                        android:textColor="@color/black"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/stepnewverid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:fontFamily="serif"
+                                        android:padding="18dp"
+                                        android:text="1.0.0"
+                                        android:textColor="@color/black"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </TableRow>
+
+                                <View
+                                    android:id="@+id/SplitLine_hor4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/black" />
+
+                                <!--                                <RelativeLayout-->
+
+                                <!--                                    android:id="@+id/RelativeLayout01"-->
+                                <!--                                    android:layout_width="fill_parent"-->
+                                <!--                                    android:layout_height="fill_parent"-->
+                                <!--                                    android:padding="10dp">-->
+
+                                <!--                                    <TextView-->
+                                <!--                                        android:id="@+id/txtnewversion"-->
+                                <!--                                        android:layout_width="wrap_content"-->
+                                <!--                                        android:layout_height="wrap_content"-->
+                                <!--                                        android:layout_alignParentLeft="true"-->
+                                <!--                                        android:linksClickable="true"-->
+                                <!--                                        android:autoLink="web"-->
+                                <!--                                        android:fontFamily="serif"-->
+                                <!--                                        android:textColor="@color/black"-->
+                                <!--                                        android:textSize="17dp"-->
+                                <!--                                        android:textStyle="bold" />-->
+
+                                <!--                                </RelativeLayout>-->
+
+                                <Button
+                                    android:id="@+id/updateAppBtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/activity_margin_60dp"
+                                    android:layout_margin="@dimen/activity_margin_10dp"
+                                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                                    android:text="UPDATE"
+                                    android:textSize="@dimen/activity_margin_18dp"
+                                    android:textStyle="bold" />
+
+
+                                <!--                            <RelativeLayout-->
+
+                                <!--                                android:id="@+id/RelativeLayout02"-->
+                                <!--                                android:layout_width="fill_parent"-->
+                                <!--                                android:layout_height="fill_parent"-->
+                                <!--                                android:padding="10dp">-->
+
+                                <!--                                <TextView-->
+                                <!--                                    android:id="@+id/txtapkfile"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:layout_alignParentLeft="true"-->
+                                <!--                                    android:autoLink="web"-->
+                                <!--                                    android:fontFamily="serif"-->
+                                <!--                                    android:linksClickable="true"-->
+                                <!--                                    android:textColor="@color/black"-->
+                                <!--                                    android:textSize="17dp"-->
+                                <!--                                    android:textStyle="bold" />-->
+
+                                <!--                            </RelativeLayout>-->
+
+                                <!--                            <View-->
+                                <!--                                android:id="@+id/SplitLine_hor2"-->
+                                <!--                                android:layout_width="match_parent"-->
+                                <!--                                android:layout_height="2dp"-->
+                                <!--                                android:background="@color/Gray" />-->
+
+                                <!--                            <LinearLayout-->
+                                <!--                                android:layout_width="match_parent"-->
+                                <!--                                android:layout_height="wrap_content"-->
+                                <!--                                android:orientation="horizontal"-->
+                                <!--                                android:padding="20dp">-->
+
+                                <!--                                <Button-->
+                                <!--                                    android:id="@+id/Btnmandator"-->
+                                <!--                                    android:layout_width="match_parent"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:layout_weight="1"-->
+                                <!--                                    android:backgroundTint="@color/apptextorange"-->
+                                <!--                                    android:text="UPDATE NOW - GO TO PLay store"-->
+                                <!--                                    android:textAlignment="center"-->
+                                <!--                                    android:textColor="#F1ECEC"-->
+                                <!--                                    android:textSize="18dp"-->
+                                <!--                                    android:textStyle="bold" />-->
+
+                                <!--                                />-->
+                                <!--                            </LinearLayout>-->
+                            </TableLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".VehicleOwnership">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OwnVehicleNot">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!--
+                                        <LinearLayout
+                                            android:id="@+id/lineuatenv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                                            android:layout_marginTop="@dimen/activity_margin_5dp"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/red"
+                                                app:cardBackgroundColor="@color/red">
+
+                                                <TextView
+                                                    android:id="@+id/uattext"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="@dimen/activity_margin_0dp"
+                                                    android:gravity="center"
+                                                    android:text="@string/test_environment"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="@dimen/activity_margin_20dp"
+                                                    android:textStyle="bold"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent" />
+                                            </androidx.cardview.widget.CardView>
+
+
+                                        </LinearLayout>
+                    -->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:id="@+id/infoContent"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_marginTop="@dimen/activity_margin_10dp"-->
+                    <!--                        android:orientation="vertical">-->
+
+                    <!--                        &lt;!&ndash;<ImageView-->
+                    <!--                            android:id="@+id/imageView"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="@dimen/activity_margin_50dp"-->
+                    <!--                            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+                    <!--                            android:layout_marginBottom="@dimen/activity_margin_0dp"-->
+                    <!--                            />&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                            android:src="@drawable/step3_0" &ndash;&gt;-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/textView4"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                    <!--                            android:layout_marginTop="@dimen/activity_margin_2dp"-->
+                    <!--                            android:text="@string/vehicle_information"-->
+                    <!--                            android:textSize="@dimen/activity_margin_22dp"-->
+                    <!--                            android:textStyle="bold"-->
+                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                        &lt;!&ndash;-->
+                    <!--                                                android:textColor="@color/appbutton"-->
+                    <!--                        &ndash;&gt;-->
+
+
+                    <!--                    </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginTop="@dimen/activity_margin_20dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:orientation="vertical"
+                            android:scrollbarStyle="outsideInset"
+                            android:scrollbars="vertical">
+
+                            <TextView
+                                android:id="@+id/vehbelyou"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_15dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/does_this_vehicle_belong_to_you"
+                                android:textSize="@dimen/activity_margin_22dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RadioGroup
+                                android:id="@+id/vehbelyouradiogroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_3dp"
+                                android:layout_marginTop="@dimen/activity_margin_15dp"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/radioovehbelyour1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:paddingRight="@dimen/activity_margin_12dp"
+                                    android:text="@string/yes_am_the_insured"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="normal" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radiovehbelyour2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:text="@string/no_am_not_the_insured"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="normal" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view23"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_1dp"
+                            android:layout_marginTop="@dimen/activity_margin_20dp"
+                            android:background="@android:color/darker_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/authlinealay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginTop="@dimen/activity_margin_0dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:orientation="vertical"
+                            android:scrollbarStyle="outsideInset"
+                            android:scrollbars="vertical">
+
+                            <TextView
+                                android:id="@+id/areyouauthorize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_15dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/are_you_authorized_to_add_it"
+                                android:textSize="@dimen/activity_margin_22dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RadioGroup
+                                android:id="@+id/youauthorizeradiogroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_3dp"
+                                android:layout_marginTop="@dimen/activity_margin_15dp"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/radioyouauthorize1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:paddingRight="@dimen/activity_margin_12dp"
+                                    android:text="@string/yes_the_insured_authorized_me"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="normal" />
+
+                                <RadioButton
+                                    android:id="@+id/radioyouauthorize2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:paddingRight="@dimen/activity_margin_12dp"
+                                    android:text="@string/no_am_helping_in_an_emergency_situation_at_the_accident_spot_for_another_vehicle"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="normal" />
+
+                                <RadioButton
+                                    android:id="@+id/radioyouauthorize3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                    android:text="@string/no_am_not_authorized"
+                                    android:textSize="@dimen/activity_margin_17dp"
+                                    android:textStyle="normal" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view24"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_1dp"
+                            android:layout_marginTop="@dimen/activity_margin_20dp"
+                            android:background="@android:color/darker_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/vehcsuceslinearlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/vehcsucessscan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_10dp"
+                                android:layout_marginTop="@dimen/activity_margin_30dp"
+                                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/for_audit_purposes_recorded_and_shared"
+                                android:textAlignment="center"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/activity_margin_17dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <!--
+                                                        <Button
+                                                            android:id="@+id/btnproceedscan"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="@dimen/activity_margin_60dp"
+                                                            android:layout_weight="1"
+                                                            android:text="@string/scan_certificate"
+                                                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                                                            android:layout_marginBottom="@dimen/activity_margin_10dp"
+                                                            android:layout_marginLeft="@dimen/activity_margin_30dp"
+                                                            android:layout_marginRight="@dimen/activity_margin_30dp"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#F1ECEC"
+                                                            android:textSize="@dimen/activity_margin_18dp"
+                                                            android:textStyle="bold" />
+                            -->
+
+                            <!--app:backgroundTint="@color/appbuttonnew"-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vehcfaillinearlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/vehcfailscan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/activity_margin_10dp"
+                                android:layout_marginTop="@dimen/activity_margin_30dp"
+                                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                                android:text="@string/aki_cra_does_not_permit"
+                                android:textAlignment="center"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/activity_margin_17dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <!--
+                                                        <Button
+                                                            android:id="@+id/btnproceedfailscan"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="@dimen/activity_margin_60dp"
+                                                            android:layout_weight="1"
+                                                            android:text="@string/back_to_home"
+                                                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                                                            android:layout_marginBottom="@dimen/activity_margin_10dp"
+                                                            android:layout_marginLeft="@dimen/activity_margin_30dp"
+                                                            android:layout_marginRight="@dimen/activity_margin_30dp"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#F1ECEC"
+                                                            android:textSize="@dimen/activity_margin_18dp"
+                                                            android:textStyle="bold" />
+                            -->
+
+                            <!--app:backgroundTint="@color/appbuttonnew"-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnproceedscan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_5dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/scan_certificate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnproceedfailscan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/back_to_home"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:src="@drawable/ic_round_double_arrow_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

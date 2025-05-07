@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".ActivationSuccess">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_10dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/infoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_5dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/activity_margin_100dp"
+                    android:layout_height="@dimen/activity_margin_100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/success" />
+                <!--                    />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtactivateid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/activity_margin_10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/activity_margin_20dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcraid2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:text="@string/congratulations_your_certificate_has_been_activated"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_margin_18dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcraid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                    android:text="@string/having_the_vehicle_associated_with_your_cra_profile_lets_you_report_claims_instantly_process_claims_more_quickly_and_seek_help_during_an_incident_click_add_vehicle_to_my_profile_to_start_your_insurance_digital_journey"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/activity_margin_16dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Btnuactivataddveh"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin_50dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:backgroundTint="@color/purple_500"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/add_vehicle_to_my_profile"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/activity_margin_18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Btnactivatebacktohome"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_margin_35dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:gravity="center"
+                android:textColor="@color/bluehyperlink"
+                android:textSize="@dimen/activity_margin_15dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

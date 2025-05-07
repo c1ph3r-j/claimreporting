@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".MyClaims">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/lineuatenv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_10dp"
+            android:layout_marginTop="@dimen/activity_margin_5dp"
+            android:layout_marginRight="@dimen/activity_margin_10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:gravity="center"
+                android:text="@string/no_records_found"
+                android:textSize="@dimen/activity_margin_30dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/claimpresent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/claimDocInfoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/latinotypeantartidaroundedbold"
+                    android:text="By selecting the specific claim from the list, you can upload the supporting documents"
+                    android:textAlignment="center"
+                    android:textColor="@color/bluehyperlink"
+                    android:textSize="@dimen/activity_margin_19dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+             
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_20dp"
+                android:layout_marginTop="@dimen/activity_margin_25dp"
+                android:layout_marginRight="@dimen/activity_margin_20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical">
+
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="@string/search_by_reg_no" />
+                <!--        <ImageView-->
+                <!--            android:id="@+id/imageViewAdd"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+                <!--            android:layout_marginBottom="@dimen/activity_margin_10dp"-->
+                <!--            android:src="@drawable/addgrey" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ListView
+                    android:id="@+id/listclaimhistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_15dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="@dimen/activity_margin_0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+               <!-- <LinearLayout
+                    android:id="@+id/claimnorecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/activity_margin_25dp"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/no_records_found2"
+                        android:textAlignment="center">
+
+                    </TextView>
+
+                </LinearLayout>-->
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

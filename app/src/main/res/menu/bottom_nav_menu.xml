@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeView"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/addVehicleView"
+        android:icon="@drawable/ic_baseline_directions_car_filled_24"
+        android:title="Add Vehicle" />
+
+
+    <item
+        android:id="@+id/myClaimsView"
+        android:icon="@drawable/my_claims_ic"
+        android:title="My Claims" />
+
+    <!--<item
+        android:id="@+id/profileView"
+        android:icon="@drawable/user_ic"
+        android:title="Account" />-->
+
+</menu>

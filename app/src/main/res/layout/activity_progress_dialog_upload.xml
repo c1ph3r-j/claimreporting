@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressDialogUpload">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtregsuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_15dp"
+            android:fontFamily="@font/latinotypeantartidaroundedbold"
+            android:gravity="center"
+            android:text="@string/wait_a_few_seconds_while_we_upload_your_images_for_our_machine_learning_models_to_analyze"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtregsuccessnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_20dp"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginRight="@dimen/activity_margin_20dp"
+            android:gravity="center"
+            android:text="@string/the_processing_time_is_dependent_on_the_speed_of_your_internet_connection"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_14dp"
+            android:textStyle="italic" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageuploading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_margin_40dp"
+            android:paddingBottom="@dimen/activity_margin_35dp"
+            android:src="@drawable/uploadicon"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

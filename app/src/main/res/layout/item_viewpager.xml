@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/activity_margin_10dp">
+
+    <LinearLayout
+        android:id="@+id/VehicleDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_borderyellow"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_margin_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_margin_50dp"
+                            android:layout_height="@dimen/activity_margin_50dp"
+                            android:layout_gravity="start"
+                            android:src="@drawable/kenyaflag"
+                            tools:ignore="ContentDescription">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/latinotypeantartidaroundedlight"
+                            android:text="@string/ke"
+                            android:textSize="@dimen/activity_margin_15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_margin_15dp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:text="@string/kjn_789_j"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/activity_margin_18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/activity_margin_35dp"
+                        android:layout_height="@dimen/activity_margin_35dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/carnumplate"
+                        tools:ignore="ContentDescription">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/makeval"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/activity_margin_5dp"
+                        android:layout_marginTop="@dimen/activity_margin_3dp"
+                        android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/activity_margin_15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addVehiclesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/alterUserToAddVehicleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin_10dp"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/add_vehicle_Text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_18dp" />
+
+            <Button
+                android:id="@+id/addVehicleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/add_ic"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/add_vehicle"
+                android:textAllCaps="false"
+                android:textSize="@dimen/activity_margin_17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addVehiclesToTheListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/closeAddVehiclesToTheListView"
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/activity_margin_10dp"
+                android:src="@drawable/ic_baseline_close_24" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="Enter Vehicle Registration Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_margin_14dp" />
+
+            <EditText
+                android:id="@+id/regNoField"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin_50dp"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="@color/lightdarkcolorgrey"
+                android:hint="Register Number"
+                android:inputType="textCapCharacters"
+                android:padding="@dimen/activity_margin_10dp"
+                android:textSize="@dimen/activity_margin_14dp" />
+
+            <Button
+                android:id="@+id/addVehicleToTheListBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:text="@string/add_vehicle"
+                android:textAllCaps="false"
+                android:textSize="@dimen/activity_margin_14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

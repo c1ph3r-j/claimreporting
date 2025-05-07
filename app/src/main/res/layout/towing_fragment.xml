@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".Towing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcolorgrey">
+
+        <TextView
+            android:id="@+id/txtregsuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_10dp"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:gravity="center"
+            android:text="@string/value_added_service_hospital"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_margin_15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/towingpresent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_margin_50dp"
+        android:orientation="vertical"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_5dp"
+            android:layout_marginTop="@dimen/activity_margin_5dp"
+            android:layout_marginRight="@dimen/activity_margin_5dp"
+            android:orientation="horizontal"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical">
+
+            <android.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search by Towing Agency name" />
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imageViewAdd"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/activity_margin_10dp"-->
+            <!--            android:layout_marginBottom="@dimen/activity_margin_10dp"-->
+            <!--            android:src="@drawable/addgrey" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/listserviceprovider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10dp"
+                android:layout_marginTop="@dimen/activity_margin_5dp"
+                android:layout_marginEnd="@dimen/activity_margin_10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/activity_margin_0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listheader="Service Provider" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/towingnorecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+            android:gravity="center"
+            android:text="@string/in_this_area_there_are_no_towing_services_listed_in_the_aki_cra"
+            android:textAlignment="center"
+            android:textSize="@dimen/activity_margin_25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

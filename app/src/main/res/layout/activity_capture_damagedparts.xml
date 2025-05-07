@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".CaptureDamagedParts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_margin_15dp"
+                android:text="Click on the appropriate side of the vehicle and capture the damaged image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_margin_15dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/frontView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:background="@drawable/dotted_box_curved_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_margin_10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Front"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/frontViewSuccessIc"
+                            android:layout_width="@dimen/activity_margin_30dp"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/activity_margin_30dp"
+                            android:contentDescription="@string/cnt"
+                            android:src="@drawable/success"
+                            android:visibility="gone" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/frontViewCountIc"
+                            android:layout_width="@dimen/activity_margin_30dp"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            android:layout_gravity="end"
+                            android:contentDescription="@string/cnt"
+                            android:padding="@dimen/activity_margin_5dp"
+                            android:visibility="gone"
+                            app:cardCornerRadius="@dimen/activity_margin_180dp">
+
+                            <TextView
+                                android:id="@+id/txtfrontView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/blackdark" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cnt"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:src="@drawable/front_car_ic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" />
+
+                <LinearLayout
+                    android:id="@+id/backView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:background="@drawable/dotted_box_curved_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_margin_10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Back"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/backViewSuccessIc"
+                            android:layout_width="@dimen/activity_margin_30dp"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/activity_margin_30dp"
+                            android:contentDescription="@string/cnt"
+                            android:src="@drawable/success"
+                            android:visibility="gone" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/backViewCountIc"
+                            android:layout_width="@dimen/activity_margin_30dp"
+                            android:layout_height="@dimen/activity_margin_30dp"
+                            android:layout_gravity="end"
+                            android:contentDescription="@string/cnt"
+                            android:padding="@dimen/activity_margin_5dp"
+                            android:visibility="gone"
+                            app:cardCornerRadius="@dimen/activity_margin_180dp">
+
+                            <TextView
+                                android:id="@+id/txtbackView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/blackdark" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cnt"
+                        android:padding="@dimen/activity_margin_10dp"
+                        android:src="@drawable/back_car_ic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/driverSideView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_15dp"
+                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                android:background="@drawable/dotted_box_curved_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Driver Side"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/driverSideViewSuccessIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/activity_margin_30dp"
+                        android:contentDescription="@string/cnt"
+                        android:src="@drawable/success"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/driverSideViewCountIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/cnt"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/activity_margin_180dp">
+
+                        <TextView
+                            android:id="@+id/txtdriverSideView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/blackdark" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/cnt"
+                    android:padding="@dimen/activity_margin_10dp"
+                    android:src="@drawable/driver_side_car_ic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passengerSideView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_15dp"
+                android:layout_marginTop="@dimen/activity_margin_15dp"
+                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                android:background="@drawable/dotted_box_curved_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Passenger Side"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/passengerSideViewSuccessIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/activity_margin_30dp"
+                        android:contentDescription="@string/cnt"
+                        android:src="@drawable/success"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/passengerSideViewCountIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/cnt"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/activity_margin_180dp">
+
+                        <TextView
+                            android:id="@+id/txtpassengerSideView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/blackdark" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/cnt"
+                    android:padding="@dimen/activity_margin_10dp"
+                    android:src="@drawable/passenger_side_car_ic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/roofView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin_15dp"
+                android:background="@drawable/dotted_box_curved_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Roof"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/roofViewSuccessIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/activity_margin_30dp"
+                        android:contentDescription="@string/cnt"
+                        android:src="@drawable/success"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/roofViewCountIc"
+                        android:layout_width="@dimen/activity_margin_30dp"
+                        android:layout_height="@dimen/activity_margin_30dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/cnt"
+                        android:padding="@dimen/activity_margin_5dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/activity_margin_180dp">
+
+                        <TextView
+                            android:id="@+id/txtroofView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/blackdark" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/cnt"
+                    android:padding="@dimen/activity_margin_10dp"
+                    android:src="@drawable/roof_car_ic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_60dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/proceedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROCEED"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_margin_18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/activity_margin_30dp"
+            android:layout_height="@dimen/activity_margin_30dp"
+            android:contentDescription="@string/cnt"
+            android:src="@drawable/ic_round_double_arrow_24" />
+
+    </LinearLayout>
+</LinearLayout>

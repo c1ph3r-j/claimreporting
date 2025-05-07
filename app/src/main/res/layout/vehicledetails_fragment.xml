@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightdarkcolorgrey"
+    tools:context=".Vehicledetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_40dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin_10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgpdfview"
+                    android:layout_width="@dimen/activity_margin_30dp"
+                    android:layout_height="@dimen/activity_margin_30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/activity_margin_20dp"
+                    app:srcCompat="@drawable/pdfblack" />
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_margin_20dp"
+                    android:stretchColumns="2">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/txtpolicyno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/policy_no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonpolicyno"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtpolicynoval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+                    </TableRow>
+
+                    <!--                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/txtcertificatetype"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_column="0"-->
+                    <!--                            android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                    <!--                            android:text="@string/certificate_type"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/activity_margin_14dp"-->
+                    <!--                            android:textStyle="bold" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/coloncertificate"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_column="1"-->
+                    <!--                            android:layout_marginLeft="@dimen/activity_margin_10dp"-->
+                    <!--                            android:layout_marginRight="@dimen/activity_margin_10dp"-->
+                    <!--                            android:fontFamily="@font/latinotypeantartidaroundedmedium"-->
+                    <!--                            android:text="@string/collen"-->
+                    <!--                            android:textAlignment="center"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/activity_margin_14dp"-->
+                    <!--                            android:textStyle="bold" />-->
+
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/txtcertificateval"-->
+                    <!--                            android:layout_width="@dimen/activity_margin_0dp"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_column="2"-->
+                    <!--                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />-->
+
+                    <!--                    </TableRow>-->
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtcoverage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/coverage_type"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coloncoverage"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtcoverageval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtcertificateno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/certificate_no"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coloncertificateno"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtcertificatenoval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtpolicystdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/policy_begin_date"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonpolicystdate"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtpolicystdateval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtpolicyenddt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/policy_end_date"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonpolicyenddt"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtpolicyenddtval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtregistrationno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/registration_no"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonregistrationno"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtregistrationnoval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtvinno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/vin_number"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonvinno"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtvinnoval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtmake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/make"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonmake"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtmakeval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                        <TextView
+                            android:id="@+id/txtmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/model"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonmodel"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtmodelval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/year_of_manufacture2"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonyear"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtyearval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtinsucompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/insurer_company"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coloninsucompany"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtinsucompanyval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtpolicyholdername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/policy_holder_name"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/colonpolicyholdername"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtpolicyholderval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                        <TextView
+                            android:id="@+id/txtinsuredphno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/insured_phone_no"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coloninsuredph"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtinsuredphnoval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_margin_20dp">
+
+                        <TextView
+                            android:id="@+id/txtinsuredmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/insured_mail_id"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coloninsuredmail"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginLeft="@dimen/activity_margin_10dp"
+                            android:layout_marginRight="@dimen/activity_margin_10dp"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                            android:text="@string/collen"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtinsuredmailval"
+                            android:layout_width="@dimen/activity_margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:fontFamily="@font/latinotypeantartidaroundedmedium" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
