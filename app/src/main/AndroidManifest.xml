@@ -44,6 +44,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBHbU7HlRx2rtcPLLY8RaYADdAsdVrnTG8" />
 
+        <activity android:name=".stereo_vision.CameraPreview"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".stereo_vision.ImageCheckerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
         <activity
             android:name=".ClaimHandler"
             android:exported="false"

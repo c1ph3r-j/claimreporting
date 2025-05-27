@@ -898,4 +898,7 @@
     <string name="search_location">Search Location</string>
     <string name="incident_date_time">Incident Date &amp; Time</string>
     <string name="use_current_location">Use current location</string>
+    <string name="back_button">back_btn</string>
+    <string name="image_analyzing_txt">Hang tight! We\'re just taking a moment to carefully analyze your image. This helps ensure we get the best possible results for you. Thanks for your patience!</string>
+
 </resources>

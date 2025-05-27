@@ -225,8 +225,7 @@ public class MapsView extends AppCompatActivity implements OnMapReadyCallback {
                 String formattedDate = dateFormatter.format(incidentDate);
                 String formattedTime = timeFormatter.format(incidentDate);
 
-                // Update UI and incidentselecteddate
-                dateTime.setText(formattedDate + " " + formattedTime);
+                // dateTime.setText(formattedDate + " " + formattedTime);
                 incidentselecteddate = formattedDate + " " + formattedTime;
 
                 // Proceed with location and navigation

@@ -17,6 +17,9 @@ import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraCharacteristics;
+import android.hardware.camera2.CameraManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -33,6 +36,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
+import com.aki.claimreporting.stereo_vision.CameraPreview;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
 
 import org.json.JSONException;
@@ -256,11 +260,44 @@ public class CameraDamage extends AppCompatActivity {
             mydb = new DatabaseHelper(CameraDamage.this);
             mCrashlytics = FirebaseCrashlytics.getInstance();
             optionvisual = 1;
-            dispatchTakePictureIntent();
+
+
+            if(hasTelephotoLens()) {
+                startActivity(new Intent(this, CameraPreview.class));
+                finish();
+            } else {
+                dispatchTakePictureIntent();
+            }
         } catch (Exception e) {
             e.printStackTrace();
             MainActivity.MobileErrorLog(e.getStackTrace()[0].getFileName() + " - " + methodName, e.getMessage(), e.toString());
             mCrashlytics.recordException(e);
+        }
+    }
+
+    private boolean hasTelephotoLens() {
+        CameraManager manager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
+        try {
+            String[] cameraIds = manager.getCameraIdList();
+            if (cameraIds.length < 3) {
+                return false;
+            }
+            for (String cameraId : cameraIds) {
+                CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
+                Integer lensFacing = characteristics.get(CameraCharacteristics.LENS_FACING);
+                float[] focalLengths = characteristics.get(CameraCharacteristics.LENS_INFO_AVAILABLE_FOCAL_LENGTHS);
+                if (lensFacing != null && lensFacing == CameraCharacteristics.LENS_FACING_BACK && focalLengths != null) {
+                    for (float focalLength : focalLengths) {
+                        if (focalLength > 5.0f) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        } catch (CameraAccessException e) {
+            e.printStackTrace(System.out);
+            return false;
         }
     }
 
@@ -317,6 +354,60 @@ public class CameraDamage extends AppCompatActivity {
             }
         }
     }
+
+//    @SuppressLint("QueryPermissionsNeeded")
+//    public void dispatchTakePictureIntent() {
+//        String methodName = Objects.requireNonNull(new Object() {
+//        }.getClass().getEnclosingMethod()).getName();
+//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        // Ensure that there's a camera activity to handle the intent
+//        if (takePictureIntent.resolveActivity(CameraDamage.this.getPackageManager()) != null) {
+//            // Create the File where the photo should go
+//            File photoFile = null;
+//            try {
+//                photoFile = createImageFile();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//                MainActivity.MobileErrorLog(e.getStackTrace()[0].getFileName() + " - " + methodName, e.getMessage(), e.toString());
+//                mCrashlytics.recordException(e);
+//                // Error occurred while creating the File
+//
+//            }
+//            // Continue only if the File was successfully created
+//            if (photoFile != null) {
+//                Uri photoURI = FileProvider.getUriForFile(CameraDamage.this,
+//                        "com.aki.claimreporting.fileprovider",
+//                        photoFile);
+//                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+//                takePictureIntent.putExtra(android.provider.MediaStore.EXTRA_SCREEN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//                if (optionvisual == 1) {
+//                    startActivityForResult(takePictureIntent, IMAGE_TAKE_CODE);
+//                }
+//
+//            }
+//        }
+//        else {
+//            //for pixel mobile phones
+//            // Create the File where the photo should go
+//            File photoFile = null;
+//            try {
+//                photoFile = createImageFile();
+//            } catch (IOException ex) {
+//                // Error occurred while creating the File
+//
+//            }
+//            // Continue only if the File was successfully created
+//            if (photoFile != null) {
+//                Uri photoURI = FileProvider.getUriForFile(this,
+//                        "com.aki.claimreporting.fileprovider",
+//                        photoFile);
+//                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+//
+//                startActivityForResult(takePictureIntent, IMAGE_TAKE_CODE);
+//
+//            }
+//        }
+//    }
 
     public boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
