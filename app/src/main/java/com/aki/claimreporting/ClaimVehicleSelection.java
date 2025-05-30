@@ -1806,6 +1806,23 @@ public class ClaimVehicleSelection extends AppCompatActivity {
                                                         }
                                                     }
                                                 });
+                                            } else if (staticJsonObj.getInt("rcode") == 1000) {
+                                                String refNo = null;
+                                                try {
+                                                    refNo = staticJsonObj.getJSONObject("rObj").getJSONObject("DuplicateInfo").getString("incidentuniquecode");
+                                                } catch(Exception e) {
+                                                    e.printStackTrace(System.out);
+                                                }
+                                                String message = refNo != null && !refNo.isEmpty() ? "A vehicle request already exists for the given registration number and incident date (Incident Unique Code:" + refNo + ")." : "A vehicle request already exists for the given registration number and incident date";
+                                                runOnUiThread(() -> {
+                                                    AlertDialog.Builder alert = new AlertDialog.Builder(ClaimVehicleSelection.this);
+                                                    alert.setTitle("Duplicate Record");
+                                                    alert.setMessage(message);
+                                                    alert.setCancelable(false);
+                                                    alert.setPositiveButton("Okay", (dialog, which) -> dialog.dismiss());
+                                                    alert.show();
+                                                    progressdialog.dismiss();
+                                                });
                                             } else if (staticJsonObj.getInt("rcode") == 401) {
                                                 runOnUiThread(new Runnable() {
                                                     @Override

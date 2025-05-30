@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Bima Yangu</string>
     <!--        <string name="uaturl">https://uat-app-api.claims.digital/api/v5</string>-->
-    <!--<string name="uaturl">http://103.82.208.145:1113/api/v5</string>-->
+    <string name="uaturl">http://103.82.208.145:1113/api/v5</string>
     <!--            <string name="uaturl">https://uat-aki-v2.claims.digital/</string>-->
-    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>
+<!--    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>-->
     <string name="createregistration">Create Your Account</string>
-    <string name="app_version">1.0.4</string>
+    <string name="app_version">1.0.6</string>
     <item name="profileView" type="id" />
     <string name="createregistrationnew">To register for the Bima Yangu system, please enter the details below</string>
     <string name="otpverification">OTP Verification</string>
