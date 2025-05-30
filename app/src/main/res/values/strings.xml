@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Bima Yangu</string>
     <!--        <string name="uaturl">https://uat-app-api.claims.digital/api/v5</string>-->
-<!--    <string name="uaturl">http://103.82.208.145:1113/api/v5</string>-->
+    <string name="uaturl">http://103.82.208.145:1113/api/v5</string>
     <!--            <string name="uaturl">https://uat-aki-v2.claims.digital/</string>-->
-    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>
+<!--    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>-->
     <string name="createregistration">Create Your Account</string>
     <string name="app_version">1.0.6</string>
     <item name="profileView" type="id" />
@@ -898,4 +898,6 @@
     <string name="search_location">Search Location</string>
     <string name="incident_date_time">Incident Date &amp; Time</string>
     <string name="use_current_location">Use current location</string>
+    <string name="back_button">back</string>
+    <string name="image_analyzing_txt">Your image is on its way to our servers for analysis. This process may take a little time depending on your network speed.</string>
 </resources>
