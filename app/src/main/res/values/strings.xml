@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Bima Yangu</string>
     <!--        <string name="uaturl">https://uat-app-api.claims.digital/api/v5</string>-->
-    <string name="uaturl">http://103.82.208.145:1113/api/v5</string>
+    <string name="uaturl">http://103.82.208.145:19000/api/v5</string>
     <!--            <string name="uaturl">https://uat-aki-v2.claims.digital/</string>-->
 <!--    <string name="uaturl">https://www.bimayangu.ke/api/v5</string>-->
     <string name="createregistration">Create Your Account</string>
