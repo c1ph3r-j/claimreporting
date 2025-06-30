@@ -7,6 +7,7 @@ import static com.aki.claimreporting.MainActivity.JSON;
 import static com.aki.claimreporting.MainActivity.alertTheUser;
 import static com.aki.claimreporting.MainActivity.checkGPSStatus;
 import static com.aki.claimreporting.MainActivity.isNetworkConnected;
+import static com.aki.claimreporting.MainActivity.mCrashlytics;
 import static com.aki.claimreporting.MainActivity.mydb;
 import static com.aki.claimreporting.MainActivity.unauthorize;
 import static com.aki.claimreporting.MainActivity.withTitleAndMessage;
@@ -33,6 +34,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.MenuItemCompat;
 
 import com.aki.claimreporting.AddVehicle;
+import com.aki.claimreporting.ClaimVehicleSelection;
 import com.aki.claimreporting.Dashboard;
 import com.aki.claimreporting.Login;
 import com.aki.claimreporting.MainActivity;
@@ -43,6 +45,8 @@ import com.aki.claimreporting.AESCrypt;
 import com.aki.claimreporting.DatabaseHelper;
 import com.google.gson.JsonObject;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.concurrent.TimeUnit;
@@ -386,6 +390,14 @@ public class MarineInsurance extends AppCompatActivity {
                             runOnUiThread(() -> {
                                 scrollView.setVisibility(View.GONE);
                                 invalidLayout.setVisibility(View.VISIBLE);
+                                String errorText = getString(R.string.ErrorMessage);
+                                try {
+                                    JSONObject rObj = staticJsonObj.getJSONObject("rObj");
+                                    errorText = rObj.optString("message", getString(R.string.ErrorMessage));
+                                } catch (Exception e) {
+                                    e.printStackTrace(System.out);
+                                }
+                                invalidText.setText(errorText);
                                 if (progressDialog.isShowing()) {
                                     progressDialog.dismiss();
                                 }

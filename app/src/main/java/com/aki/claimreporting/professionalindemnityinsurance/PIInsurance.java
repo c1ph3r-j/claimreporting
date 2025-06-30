@@ -42,6 +42,7 @@ import com.aki.claimreporting.AESCrypt;
 import com.aki.claimreporting.DatabaseHelper;
 import com.google.gson.JsonObject;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -293,11 +294,19 @@ public class PIInsurance extends AppCompatActivity {
                             runOnUiThread(() -> {
                                 scrollView.setVisibility(View.GONE);
                                 invalidLayout.setVisibility(View.VISIBLE);
+                                String errorText = getString(R.string.ErrorMessage);
+                                try {
+                                    JSONObject rObj = staticJsonObj.getJSONObject("rObj");
+                                    errorText = rObj.optString("message", getString(R.string.ErrorMessage));
+                                } catch (Exception e) {
+                                    e.printStackTrace(System.out);
+                                }
+                                invalidText.setText(errorText);
                                 if (progressDialog.isShowing()) {
                                     progressDialog.dismiss();
                                 }
                             });
-                        } else {
+                        }else {
                             runOnUiThread(() -> {
                                 if (progressDialog.isShowing()) {
                                     progressDialog.dismiss();

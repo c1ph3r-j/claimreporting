@@ -14,7 +14,7 @@ import com.google.firebase.crashlytics.FirebaseCrashlytics;
 
 import java.util.Objects;
 
-public class InvalidResultView extends AppCompatActivity {
+public class  InvalidResultView extends AppCompatActivity {
     TextView invalidMsgView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +29,12 @@ public class InvalidResultView extends AppCompatActivity {
             invalidMsgView = findViewById(R.id.invalidMsgView);
 
             String type = getIntent().getStringExtra("type");
+            String message = getIntent().getStringExtra("message");
             if(type != null) {
                 if(type.equals("motor")) {
-                    invalidMsgView.setText(R.string.invalid_crt);
+                    invalidMsgView.setText(message == null ? getString(R.string.invalid_crt) : message);
                 } else if (type.equals("life")) {
-                    invalidMsgView.setText(R.string.invalid_life_crt);
+                    invalidMsgView.setText(message == null ? getString(R.string.invalid_life_crt) : message);
                 }
             }
 

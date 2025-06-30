@@ -51,8 +51,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="@dimen/activity_margin_8dp"
                     android:layout_margin="@dimen/activity_margin_8dp"
+                    app:cardCornerRadius="@dimen/activity_margin_8dp"
                     app:cardElevation="@dimen/activity_margin_8dp">
 
                     <LinearLayout
@@ -107,8 +107,8 @@
                                     <TextView
                                         android:id="@+id/stepnewver"
                                         android:layout_width="wrap_content"
-                                        android:layout_weight="1"
                                         android:layout_height="match_parent"
+                                        android:layout_weight="1"
                                         android:background="@color/white"
                                         android:fontFamily="serif"
                                         android:paddingLeft="18dp"
@@ -146,8 +146,8 @@
                                     <TextView
                                         android:id="@+id/stepoldver"
                                         android:layout_width="wrap_content"
-                                        android:layout_weight="1"
                                         android:layout_height="match_parent"
+                                        android:layout_weight="1"
                                         android:background="@color/white"
                                         android:fontFamily="serif"
                                         android:paddingLeft="18dp"

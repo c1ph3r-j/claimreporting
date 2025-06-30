@@ -171,8 +171,16 @@ public class GetLifeInsureDetails extends AppCompatActivity {
                                     runOnUiThread(() -> {
                                         progressdialog.dismiss();
                                     });
+                                    String errorText = getString(R.string.ErrorMessage);
+                                    try {
+                                        JSONObject rObj = staticJsonObj.getJSONObject("rObj");
+                                        errorText = rObj.optString("message", getString(R.string.ErrorMessage));
+                                    } catch (Exception e) {
+                                        e.printStackTrace(System.out);
+                                    }
                                     Intent intent = new Intent(this, InvalidResultView.class);
                                     intent.putExtra("type", "life");
+                                    intent.putExtra("message" , errorText);
                                     startActivity(intent);
                                 } catch (Exception e) {
                                     e.printStackTrace();
